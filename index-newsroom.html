@@ -1,0 +1,257 @@
+<!-- Popular articles (Carousel) -->
+<section class="bg-secondary py-5">
+  <div
+    class="container d-flex align-items-center pt-lg-2 pt-xl-4 pt-xxl-5 pb-3 mt-1 mt-sm-3 mb-3 my-md-4"
+  >
+    <h2 class="h1 mb-0">Newsroom</h2>
+
+    <!-- Slider control buttons (Prev / Next) -->
+    <div class="d-flex ms-auto">
+      <button
+        class="btn btn-sm btn-icon btn-outline-primary rounded-circle ms-3"
+        type="button"
+        id="prev-popular"
+        aria-label="Prev"
+      >
+        <i class="ai-arrow-left"></i>
+      </button>
+      <button
+        class="btn btn-sm btn-icon btn-outline-primary rounded-circle ms-3"
+        type="button"
+        id="next-popular"
+        aria-label="Next"
+      >
+        <i class="ai-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Swiper slider -->
+  <div class="container-start">
+    <div
+      class="swiper"
+      data-swiper-options='{
+            "slidesPerView": 1,
+            "spaceBetween": 24,
+            "loop": true,
+            "navigation": {
+              "prevEl": "#prev-popular",
+              "nextEl": "#next-popular"
+            },
+            "breakpoints": {
+              "576": {
+                "slidesPerView": "auto"
+              }
+            }
+          }'
+    >
+      <div class="swiper-wrapper">
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v1.html">
+              <img class="card-img-top" src="assets/img/blog/grid/01.jpg" alt="Post image" />
+            </a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">12 hours ago</span>
+                <span class="fs-xs opacity-20 mx-3">|</span>
+                <a class="badge text-nav fs-xs border" href="#">Books</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v1.html">Top books for inspiration</a>
+              </h3>
+              <p class="card-text">
+                Vulputate auctor lacus imperdiet facilisi tristique nisl pulvinar porta diam duis...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/06.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">Jenny Wilson</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v2.html">
+              <img class="card-img-top" src="assets/img/blog/grid/02.jpg" alt="Post image" />
+            </a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">2 days ago</span>
+                <span class="fs-xs opacity-20 mx-3">|</span>
+                <a class="badge text-nav fs-xs border" href="#">Travel</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v2.html">Ways to travel in 2022</a>
+              </h3>
+              <p class="card-text">
+                Duis consectetur quis enim iaculis eu sagittis posuere imperdiet scelerisque...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/05.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">Darlene Robertson</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v3.html">
+              <img class="card-img-top" src="assets/img/blog/grid/03.jpg" alt="Post image" />
+            </a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">1 week ago</span>
+                <span class="fs-xs opacity-20 mx-3">|</span>
+                <a class="badge text-nav fs-xs border" href="#">Inspiration</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v3.html">Inspiration in quarantine</a>
+              </h3>
+              <p class="card-text">
+                Nec in est vel ac et odio interdum risus maecenas pulvinar potenti gravida sed...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/12.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">Guy Hawkins</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v1.html"
+              ><img class="card-img-top" src="assets/img/blog/grid/04.jpg" alt="Post image"
+            /></a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">July 15, 2022</span
+                ><span class="fs-xs opacity-20 mx-3">|</span
+                ><a class="badge text-nav fs-xs border" href="#">TV Shows</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v1.html">New series from Netflix</a>
+              </h3>
+              <p class="card-text">
+                Nec gravida senectus donec vivamus quam urna facilisis viverra eget in
+                suspendisse...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/11.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">Lillia Black</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v2.html">
+              <img class="card-img-top" src="assets/img/blog/grid/05.jpg" alt="Post image" />
+            </a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">May 28, 2022</span>
+                <span class="fs-xs opacity-20 mx-3">|</span>
+                <a class="badge text-nav fs-xs border" href="#">Inspiration</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v2.html">How to look for inspiration?</a>
+              </h3>
+              <p class="card-text">
+                Risus arcu urna nisl massa nec leo tesque ac suspendisse magna verot ipsum...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/08.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">David Bocous</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item -->
+        <article class="swiper-slide w-sm-auto h-auto">
+          <div class="card h-100 border-0 mx-auto" style="max-width: 416px">
+            <a href="blog-single-v3.html">
+              <img class="card-img-top" src="assets/img/blog/grid/06.jpg" alt="Post image" />
+            </a>
+            <div class="card-body pb-4">
+              <div class="d-flex align-items-center mb-4 mt-n1">
+                <span class="fs-sm text-body-secondary">April 14, 2022</span>
+                <span class="fs-xs opacity-20 mx-3">|</span>
+                <a class="badge text-nav fs-xs border" href="#">Psychology</a>
+              </div>
+              <h3 class="h4 card-title">
+                <a href="blog-single-v3.html">A psychologist as choice</a>
+              </h3>
+              <p class="card-text">
+                Eu aenean euismod in tellus ipsum et natoque aliquam maecenas. Sed lectus...
+              </p>
+            </div>
+            <div class="card-footer pt-3">
+              <a class="d-flex align-items-center text-decoration-none pb-2" href="#">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/avatar/12.jpg"
+                  width="48"
+                  alt="Post author"
+                />
+                <h6 class="ps-3 mb-0">Guy Hawkins</h6>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- All articles button -->
+  <div
+    class="container text-center pt-4 pb-1 pb-sm-3 pb-md-4 py-lg-5 mb-xl-1 mb-xxl-4 mt-2 mt-lg-0"
+  >
+    <a class="btn btn-primary mb-1" href="blog-grid-sidebar.html">Read all articles</a>
+  </div>
+</section>

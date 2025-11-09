@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
 
@@ -10,13 +10,13 @@
     />
 
     <!-- SEO meta tags -->
-    <title>Around | Shop Homepage v.1</title>
-    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template" />
+    <title>C4AC | Donate</title>
+    <meta name="description" content="C4AC | Donate" />
     <meta
       name="keywords"
       content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative"
     />
-    <meta name="author" content="Createx Studio" />
+    <meta name="author" content="C4AC Labs" />
 
     <!-- Webmanifest + Favicon / App icons -->
     <link rel="manifest" href="/manifest.json" />
@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png" />
 
     <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+    <!-- <script src="assets/js/theme-switcher.js"></script> -->
 
     <!-- Import Google font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -157,268 +157,8 @@
       </div>
     </div>
 
-    <!-- Search modal -->
-    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" data-focus-input="#search">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header d-block position-relative border-0 pb-3">
-            <form class="position-relative w-100 mt-2 mb-4">
-              <button
-                class="btn-close position-absolute top-50 end-0 translate-middle-y m-0 me-n1"
-                type="reset"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-              <i
-                class="ai-search fs-xl position-absolute top-50 start-0 translate-middle-y ms-3"
-              ></i>
-              <input
-                class="form-control form-control-lg px-5"
-                type="search"
-                placeholder="Type to search"
-                data-focus-on-open='["modal", "#searchModal"]'
-              />
-            </form>
-            <div class="fs-xs fw-medium text-body-secondary text-uppercase">Suggestions</div>
-          </div>
-          <div class="modal-body pt-3">
-            <div class="d-flex align-items-center border-bottom pb-4 mb-4">
-              <a
-                class="position-relative d-inline-block flex-shrink-0 bg-secondary rounded-1"
-                href="shop-single.html"
-              >
-                <span
-                  class="badge bg-success position-absolute top-0 start-100 translate-middle ms-n1"
-                  >Shop</span
-                >
-                <img src="assets/img/shop/cart/01.png" width="90" alt="Product" />
-              </a>
-              <div class="ps-3">
-                <h4 class="h6 mb-2">
-                  <a href="shop-single.html">Candle in concrete bowl</a>
-                </h4>
-                <span class="mb-0 me-2">$11.00</span>
-                <del class="fs-sm text-body-secondary ms-auto">$15.00</del>
-              </div>
-            </div>
-            <div class="d-flex align-items-center border-bottom pb-4 mb-4">
-              <a class="position-relative d-inline-block flex-shrink-0" href="#">
-                <span class="badge bg-info position-absolute top-0 start-100 translate-middle ms-n1"
-                  >Blog</span
-                >
-                <img
-                  class="rounded-1"
-                  src="assets/img/landing/shop-1/instagram/02.jpg"
-                  width="90"
-                  alt="Post"
-                />
-              </a>
-              <div class="ps-3">
-                <h4 class="h6 mb-0">
-                  <a href="#"
-                    >Bedroom decoration explained. Tips &amp; tricks from the field experts.</a
-                  >
-                </h4>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <a
-                class="position-relative d-inline-block flex-shrink-0 bg-secondary rounded-1"
-                href="shop-single.html"
-              >
-                <span
-                  class="badge bg-success position-absolute top-0 start-100 translate-middle ms-n1"
-                  >Shop</span
-                >
-                <img src="assets/img/shop/cart/02.png" width="90" alt="Product" />
-              </a>
-              <div class="ps-3">
-                <h4 class="h6 mb-2">
-                  <a href="shop-single.html">Exquisite glass vase</a>
-                </h4>
-                <span class="mb-0 me-2">$23.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cart offcanvas -->
-    <div class="offcanvas offcanvas-end py-2 p-sm-4 p-md-5" id="cartOffcanvas" style="width: 680px">
-      <!-- Title -->
-      <div class="px-4 pt-3">
-        <div class="d-flex justify-content-between align-items-center border-bottom pb-3 pb-sm-4">
-          <h2 class="offcanvas-title d-flex align-items-center mb-1">
-            Your cart <span class="fs-base fw-normal text-body-secondary ms-3">(3 items)</span>
-          </h2>
-          <button
-            class="btn-close mb-1 me-n1"
-            type="button"
-            data-bs-dismiss="offcanvas"
-            data-bs-target="#cartOffcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
-
-      <!-- Body -->
-      <div class="offcanvas-body">
-        <!-- Item -->
-        <div class="d-sm-flex align-items-center pb-4">
-          <a
-            class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0"
-            href="shop-single.html"
-            ><img src="assets/img/shop/cart/01.png" width="110" alt="Product"
-          /></a>
-          <div class="w-100 pt-1 ps-sm-4">
-            <div class="d-flex">
-              <div class="me-3">
-                <h3 class="h5 mb-2">
-                  <a href="shop-single.html">Candle in concrete bowl</a>
-                </h3>
-                <div class="d-flex flex-wrap">
-                  <div class="text-body-secondary fs-sm me-3">
-                    Color: <span class="text-dark fw-medium">Gray night</span>
-                  </div>
-                  <div class="text-body-secondary fs-sm me-3">
-                    Weight: <span class="text-dark fw-medium">140g</span>
-                  </div>
-                </div>
-              </div>
-              <div class="text-end ms-auto">
-                <div class="fs-5 mb-2">$11.00</div>
-                <del class="text-body-secondary ms-auto">$15.00</del>
-              </div>
-            </div>
-            <div class="count-input ms-n3">
-              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
-              <input class="form-control" type="number" value="2" readonly />
-              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
-            </div>
-            <div class="nav justify-content-end mt-n5 mt-sm-n3">
-              <a
-                class="nav-link fs-xl p-2"
-                href="#"
-                data-bs-toggle="tooltip"
-                title="Remove"
-                aria-label="Remove"
-              >
-                <i class="ai-trash"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item -->
-        <div class="d-sm-flex align-items-center border-top py-4">
-          <a
-            class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0"
-            href="shop-single.html"
-          >
-            <img src="assets/img/shop/cart/02.png" width="110" alt="Product" />
-          </a>
-          <div class="w-100 pt-1 ps-sm-4">
-            <div class="d-flex">
-              <div class="me-3">
-                <h3 class="h5 mb-2">
-                  <a href="shop-single.html">Exquisite glass vase</a>
-                </h3>
-              </div>
-              <div class="text-end ms-auto">
-                <div class="fs-5 mb-2">$23.00</div>
-              </div>
-            </div>
-            <div class="count-input ms-n3">
-              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
-              <input class="form-control" type="number" value="1" readonly />
-              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
-            </div>
-            <div class="nav justify-content-end mt-n5 mt-sm-n3">
-              <a
-                class="nav-link fs-xl p-2"
-                href="#"
-                data-bs-toggle="tooltip"
-                title="Remove"
-                aria-label="Remove"
-              >
-                <i class="ai-trash"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item -->
-        <div class="d-sm-flex align-items-center border-top pt-4">
-          <a
-            class="d-inline-block flex-shrink-0 bg-secondary rounded-1 p-sm-2 p-md-3 mb-2 mb-sm-0"
-            href="shop-single.html"
-          >
-            <img src="assets/img/shop/cart/03.png" width="110" alt="Product" />
-          </a>
-          <div class="w-100 pt-1 ps-sm-4">
-            <div class="d-flex">
-              <div class="me-3">
-                <h3 class="h5 mb-2">
-                  <a href="shop-single.html">Set for a dinner party of 7 items</a>
-                </h3>
-              </div>
-              <div class="text-end ms-auto">
-                <div class="fs-5 mb-2">$47.00</div>
-              </div>
-            </div>
-            <div class="count-input ms-n3">
-              <button class="btn btn-icon fs-xl" type="button" data-decrement>-</button>
-              <input class="form-control" type="number" value="1" readonly />
-              <button class="btn btn-icon fs-xl" type="button" data-increment>+</button>
-            </div>
-            <div class="nav justify-content-end mt-n5 mt-sm-n3">
-              <a
-                class="nav-link fs-xl p-2"
-                href="#"
-                data-bs-toggle="tooltip"
-                title="Remove"
-                aria-label="Remove"
-              >
-                <i class="ai-trash"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Coupon input + Total -->
-      <div class="px-4 pb-3 pb-sm-4 pb-sm-5">
-        <div class="d-sm-flex align-items-center border-top pt-4">
-          <div class="input-group input-group-sm border-dashed mb-3 mb-sm-0 me-sm-4 me-md-5">
-            <input class="form-control text-uppercase" type="text" placeholder="Your coupon code" />
-            <button class="btn btn-secondary" type="button">Apply coupon</button>
-          </div>
-          <div class="d-flex align-items-center justify-content-center">
-            <span class="fs-xl me-3">Total:</span>
-            <span class="h3 mb-0">$92.00</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Action buttons -->
-      <div class="d-flex align-items-center justify-content-between px-4 pb-3">
-        <div class="nav d-none d-sm-block">
-          <a class="nav-link fw-semibold px-0" href="#cartOffcanvas" data-bs-dismiss="offcanvas">
-            <i class="ai-chevron-left fs-xl me-2"></i>
-            Back to shop
-          </a>
-        </div>
-        <a class="btn btn-lg btn-primary w-100 w-sm-auto" href="shop-checkout.html">
-          Proceed to checkout
-          <i class="ai-chevron-right ms-2 me-n1"></i>
-        </a>
-      </div>
-    </div>
-
     <!-- Page wrapper -->
     <main class="page-wrapper">
-      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
       <div class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -430,8 +170,8 @@
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 375 375"
-                width="80"
-                height="80"
+                width="50"
+                height="50"
               >
                 <path
                   d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
@@ -574,7 +314,7 @@
                 <a class="nav-link" href="join-team.html">Get Involved</a>
               </li>
             </ul>
-            <div class="d-sm-none p-3 mt-n3">
+            <!-- <div class="d-sm-none p-3 mt-n3">
               <a
                 class="btn btn-primary w-100 mb-1"
                 href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
@@ -584,7 +324,7 @@
                 <i class="ai-cart fs-xl me-2 ms-n1"></i>
                 Buy now
               </a>
-            </div>
+            </div> -->
           </nav>
         </div>
       </div>
@@ -657,7 +397,14 @@
         </div>
       </section>
 
-      <!-- About -->
+      <!-- Our Banner -->
+      <section>
+        <div class="bg-primary py-4" data-bs-theme="dark">
+          <div class="container fs-lg text-body text-center">
+            Join us in building the infrastructure of safety, storytelling, and solidarity.
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer-->

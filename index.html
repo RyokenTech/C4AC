@@ -1,35 +1,297 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
-    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+
     <!-- SEO meta tags -->
-    <title>C4AC | Coming Soon</title>
-    <meta name="description" content="C4AC - Coming Soon">
-    <meta name="keywords" content="Communications, Digital Security, Strategic Communications, Communication Strategy, Tech4Good, Comms4Good, Development Communications, Communications Grant">
-    <meta name="author" content="Kabir Patil">
+    <title>C4AC | NARRATIVE POWER IS MOVEMENT POWER</title>
+    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template" />
+    <meta
+      name="keywords"
+      content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative"
+    />
+    <meta name="author" content="Createx Studio" />
 
     <!-- Webmanifest + Favicon / App icons -->
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
-        
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png" />
+
     <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+    <!-- <script src="assets/js/theme-switcher.js"></script> -->
 
     <!-- Import Google font (Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/img-comparison-slider/dist/styles.css"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
 
     <!-- Font icons -->
-    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css" />
 
     <!-- Theme styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css" />
+
+    <!-- Scroll down animated button -->
+    <style>
+      .scroll-down-btn {
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      .scroll-down-btn p {
+        margin-top: 1.25rem;
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.375rem;
+        text-indent: 0.375rem;
+        animation:
+          colorText 5s ease-out infinite,
+          nudgeText 5s ease-out infinite;
+      }
+
+      .mouse {
+        background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
+        position: relative;
+        width: 38px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 6rem;
+        background-size: 100% 200%;
+        animation:
+          colorSlide 5s linear infinite,
+          nudgeMouse 5s ease-out infinite;
+      }
+
+      .mouse:before,
+      .mouse:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      .mouse:before {
+        width: 34px;
+        height: 61px;
+        background-color: #121519;
+        border-radius: 6rem;
+      }
+
+      .mouse:after {
+        background-color: white;
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 100%;
+        animation: trackBallSlide 5s linear infinite;
+      }
+
+      @keyframes colorSlide {
+        0% {
+          background-position: 0% 100%;
+        }
+
+        20% {
+          background-position: 0% 0%;
+        }
+
+        21% {
+          background-color: #2c333e;
+        }
+
+        29.99% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+
+        30% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+
+        50% {
+          background-position: 0% 0%;
+        }
+
+        51% {
+          background-color: #2c333e;
+        }
+
+        59% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+
+        60% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+
+        80% {
+          background-position: 0% 0%;
+        }
+
+        81% {
+          background-color: #2c333e;
+        }
+
+        90%,
+        100% {
+          background-color: white;
+        }
+      }
+
+      @keyframes trackBallSlide {
+        0% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+
+        6% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+
+        14% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+
+        15%,
+        19% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+
+        28%,
+        29.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+
+        30% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+
+        36% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+
+        44% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+
+        45%,
+        49% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+
+        58%,
+        59.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+
+        66% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+
+        74% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+
+        75%,
+        79% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+
+        88%,
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+      }
+
+      @keyframes nudgeMouse {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+
+        20%,
+        50%,
+        80% {
+          transform: translateY(8px);
+        }
+      }
+
+      @keyframes nudgeText {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+
+        20%,
+        50%,
+        80% {
+          transform: translateY(2px);
+        }
+      }
+
+      @keyframes colorText {
+        21%,
+        51%,
+        81% {
+          color: #2c333e;
+        }
+
+        30%,
+        60%,
+        90% {
+          color: white;
+        }
+      }
+    </style>
 
     <!-- Page loading styles -->
     <style>
@@ -41,20 +303,23 @@
         left: 0;
         width: 100%;
         height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
         background-color: #fff;
         opacity: 0;
         visibility: hidden;
         z-index: 9999;
       }
-      [data-bs-theme="dark"] .page-loading {
+
+      [data-bs-theme='dark'] .page-loading {
         background-color: #121519;
       }
+
       .page-loading.active {
         opacity: 1;
         visibility: visible;
       }
+
       .page-loading-inner {
         position: absolute;
         top: 50%;
@@ -63,55 +328,64 @@
         text-align: center;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
         opacity: 0;
       }
+
       .page-loading.active > .page-loading-inner {
         opacity: 1;
       }
+
       .page-loading-inner > span {
         display: block;
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 1rem;
         font-weight: normal;
         color: #6f788b;
       }
-      [data-bs-theme="dark"] .page-loading-inner > span {
+
+      [data-bs-theme='dark'] .page-loading-inner > span {
         color: #fff;
-        opacity: .6;
+        opacity: 0.6;
       }
+
       .page-spinner {
         display: inline-block;
         width: 2.75rem;
         height: 2.75rem;
-        margin-bottom: .75rem;
+        margin-bottom: 0.75rem;
         vertical-align: text-bottom;
-        background-color: #d7dde2; 
+        background-color: #d7dde2;
         border-radius: 50%;
         opacity: 0;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
       }
-      [data-bs-theme="dark"] .page-spinner {
-        background-color: rgba(255,255,255,.25);
+
+      [data-bs-theme='dark'] .page-spinner {
+        background-color: rgba(255, 255, 255, 0.25);
       }
+
       @-webkit-keyframes spinner {
         0% {
           -webkit-transform: scale(0);
           transform: scale(0);
         }
+
         50% {
           opacity: 1;
           -webkit-transform: none;
           transform: none;
         }
       }
+
       @keyframes spinner {
         0% {
           -webkit-transform: scale(0);
           transform: scale(0);
         }
+
         50% {
           opacity: 1;
           -webkit-transform: none;
@@ -122,7 +396,7 @@
 
     <!-- Page loading scripts -->
     <script>
-      (function () {
+      ;(function () {
         window.onload = function () {
           const preloader = document.querySelector('.page-loading')
           preloader.classList.remove('active')
@@ -134,11 +408,9 @@
     </script>
   </head>
 
-
   <!-- Body -->
+
   <body>
-
-
     <!-- Page loading spinner -->
     <div class="page-loading active">
       <div class="page-loading-inner">
@@ -147,176 +419,977 @@
       </div>
     </div>
 
-
     <!-- Page wrapper -->
     <main class="page-wrapper">
-      <div class="d-lg-flex position-relative h-100">
+      <header data-bs-theme="dark">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+        <div class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand pe-sm-3" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 375 375"
+                  width="50"
+                  height="50"
+                >
+                  <path
+                    d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                    style="fill: #faea77"
+                  />
+                  <path
+                    d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                    style="fill: #b8e084"
+                  />
+                  <path
+                    d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                    style="fill: #de3821"
+                  />
+                  <path
+                    d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                    style="fill: #f8e877"
+                  />
+                </svg>
+              </span>
+            </a>
 
-        <!-- Logo visible on screens < 992px -->
-        <div class="d-flex d-lg-none justify-content-center pt-4 px-3 mx-auto" style="max-width: 420px;">
-          <a class="navbar-brand text-dark p-0 m-0" href="index.html">
-            <span class="text-primary flex-shrink-0 me-2">
-              <svg width="35" height="32" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 375">
-  <path d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z" style="fill: #010100;"/>
-  <path d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z" style="fill: #faea77;"/>
-  <path d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"/>
-  <path d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"/>
-  <path d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"/>
-  <path d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z" style="fill: #b8e084;"/>
-  <path d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z" style="fill: #de3821;"/>
-  <path d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z" style="fill: #638cca;"/>
-  <path d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z" style="fill: #638cca;"/>
-  <path d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z" style="fill: #f8e877;"/>
-</svg>
+            <!-- Theme switcher -->
+            <!-- <div
+              class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto"
+              data-bs-toggle="mode"
+            >
+              <input class="form-check-input" type="checkbox" id="theme-mode" />
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-sun fs-lg"></i>
+              </label>
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-moon fs-lg"></i>
+              </label>
+            </div> -->
+
+            <!-- Mobile menu toggler (Hamburger) -->
+            <button
+              class="navbar-toggler ms-sm-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar collapse (Main navigation) -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Story</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="who-we-are.html">Who We Are</a></li>
+                    <li><a class="dropdown-item" href="about-team.html">Our Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Approach</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="fhr3.html">FHR3 Model</a></li>
+                    <li><a class="dropdown-item" href="microfunding.html">Micro Funding</a></li>
+                    <li>
+                      <a class="dropdown-item" href="comms-storytelling.html"
+                        >Comms & Storytelling Accompaniment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital-security-justice-tech.html"
+                        >Digital Security & Justice-Tech Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="linking-learning.html"
+                        >Linking, Learning & Lobbying</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="funders-donors.html">For Funders & Donors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movements.html">For Movements</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Resources</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="publications.html">Publications & Tools</a>
+                    </li>
+                    <li><a class="dropdown-item" href="newsroom.html">Newsroom</a></li>
+                  </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="join-team.html">Get Involved</a>
+                </li>
+              </ul>
+              <div class="d-sm-none p-3 mt-n3">
+                <a
+                  class="btn btn-primary w-100 mb-1"
+                  href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="ai-cart fs-xl me-2 ms-n1"></i>
+                  Buy now
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section
+        class="bg-dark position-relative min-vh-100 overflow-hidden pt-5"
+        data-bs-theme="dark"
+      >
+        <svg
+          class="position-absolute top-0"
+          width="262"
+          height="160"
+          viewBox="0 0 262 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="left: 6%"
+        >
+          <ellipse cx="131" cy="30.5" rx="131" ry="129.5" fill="white" fill-opacity=".03"></ellipse>
+        </svg>
+        <div class="container position-relative z-5 text-center pt-5 mt-lg-4 mt-xl-5">
+          <h1 class="display-1 pt-4 mt-sm-3">
+            <span class="d-inline-flex align-items-center">
+              <span class="text-white">COMMS FOR A CAUSE</span>
             </span>
-            
+          </h1>
+          <p class="text-body fs-xl">
+            At the intersection of communications and digital security, we create the shield and
+            megaphone of movement infrastructure, transforming visibility into safety, and stories
+            into people power.
+          </p>
+          <h5 class="text-body fs-xl">Because Strengthened Movements Strengthen Movements.</h5>
+          <a class="scroll-down-btn" href="#landings" data-scroll data-scroll-offset="20">
+            <div class="mouse"></div>
+            <p></p>
           </a>
         </div>
+        <div class="d-none d-lg-block" style="margin-top: -80px"></div>
+        <div class="d-none d-sm-block d-lg-none" style="margin-top: -40px"></div>
+        <div class="parallax mx-auto mb-n5" style="max-width: 1606px">
+          <div class="parallax-layer" data-depth="-0.1">
+            <img src="assets/img/landing/intro/hero/01.png" alt="Background shapes" />
+          </div>
+          <div class="parallax-layer z-2" data-depth="0.12">
+            <img src="assets/img/landing/intro/hero/02.png" alt="Foreground shape" />
+          </div>
+          <div class="parallax-layer z-2" data-depth="0.35">
+            <img src="assets/img/landing/intro/hero/03.png" alt="Foreground shape" />
+          </div>
+          <div class="parallax-layer z-2" data-depth="0.23">
+            <img src="assets/img/landing/intro/hero/04.png" alt="Foreground shape" />
+          </div>
+        </div>
+      </section>
 
-        <!-- Parallax gfx -->
-        <div class="w-sm-75 w-lg-100 p-4 overflow-hidden mx-auto mx-lg-0 order-lg-2" style="max-width: 1047px;">
-          <div class="p-sm-3 h-100">
-            <div class="position-relative h-100">
-              <div class="position-absolute top-0 end-0 h-100 bg-primary rounded-5 d-none d-lg-block" style="width: 93.9%;"></div>
-              <div class="position-absolute top-0 end-0 h-100 bg-primary rounded-4 d-lg-none" style="width: 93.9%;"></div>
-              <div class="parallax h-100 z-2 overflow-hidden">
-                <div class="parallax-layer d-flex align-items-end mb-n2 mb-lg-0" style="margin-top: 4.4%;" data-depth="0.1">
-                  <img src="assets/img/coming/girl.png" alt="Girl">
-                </div>
-              </div>
-              <div class="parallax position-absolute top-0 start-0 w-100 h-100 z-2">
-                <div class="parallax-layer d-flex align-items-end" style="padding-right: 75.6%; padding-bottom: 70%;" data-depth="-0.1">
-                  <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="239" height="233" viewBox="0 0 239 233" fill="none" xmlns:v="https://vecta.io/nano"><style><![CDATA[.B{stroke-miterlimit:10}.C{fill:currentColor}.D{stroke:#fff}.E{stroke-width:1.709}]]></style><g class="C"><g stroke="currentColor" stroke-width="1.923" class="B"><path d="M87.071 128.678s-2.681 19.31 1.872 35.431c5.767 20.454 27.526 48.523 31.467 47.495s-2.161-14.445-2.196-25.458c-.069-18.236 8.251-24.568 8.251-24.568l-39.394-32.9zM234.248 231.78c-11.856-4.287-14.572-17.53-16.71-27.584-1.236-5.778-2.357-11.729-6.055-17.022a26.14 26.14 0 0 0-6.714-6.622c-.844-.566-6.668-4.16-7.754-3.027 2.623-2.727 11.232 2.947 14.237 5.119 3.258 2.346 8.955 7.5 10.157 11.417.867-3.859-2.438-11.29-4.148-15.115-2.647-5.905-6.691-13.74-10.944-18.975-7.419-9.152-17.808-14.826-28.185-15.612-2.947-.22-6.148.358-8.967.867-25.539 4.599-35.269 38.493-11.741 60.126 6.286 5.778 13.832 9.302 21.632 10.446 7.385 1.075 17.831.451 22.049 9.418 1.341-5.177-5.986-15.785-11.255-19.541-2.381-1.699-5.131-3.316-7.812-4.079-2.704-.763-4.703-1.098-6.922-1.468 2.577-.658 1.283-.485 4.322-.693 2.323-.15 6.148.936 9.106 1.895 5.142 1.676 14.087 8.817 17.484 13.151 7.5 9.614 16.098 19.09 28.22 17.299z"/><path d="M137.176 173.155l34.129-35.448 5.994 5.771-34.129 35.448-5.994-5.771zM125.055 88.59s19.403-1.953 35.339 3.201c20.223 6.529 47.449 29.341 46.282 33.235-1.168 3.906-14.353-2.704-25.366-3.155-18.212-.751-24.857 7.327-24.857 7.327L125.055 88.59z"/><path d="M110.021 52.257c43.855 42.226 60.069 77.495 63.616 83.828l-38.25 39.729c-6.472-3.305-42.33-18.166-86.185-60.391C29.88 96.817 17.053 73.705 9.495 52.881L48.716 9.521c21.09 6.772 41.984 24.132 61.305 42.737z"/><path d="M9.334 7.859c9.823.381 22.708 2.6 36.69 7.095l-3.536 6.067c-6.448 11.048-15.381 20.432-26.105 27.4l-6.887 4.472C4.48 39.084 1.776 26.291 1.025 16.492.655 11.708 4.538 7.675 9.334 7.86zM123.31 126.077l.023-.023c2.577-2.681 8.159-.751 13.336 4.23s35.373 35.2 31.64 39.071l-.011.011-.012.012c-3.721 3.871-35.061-25.158-40.238-30.138s-7.315-10.482-4.738-13.163zM53.269 58.475c7.234-7.512 19.194-7.743 26.706-.509s7.743 19.195.508 26.706-19.195 7.742-26.706.508-7.742-19.195-.508-26.706z"/></g><path d="M11.795 1.007c9.823.381 22.708 2.6 36.69 7.095l-3.536 6.067c-6.448 11.048-15.381 20.431-26.105 27.4l-6.887 4.472c-5.016-13.81-7.72-26.602-8.471-36.402a8.01 8.01 0 0 1 8.309-8.632zm113.977 118.218l.023-.023c2.577-2.681 8.158-.751 13.335 4.229 3.467 3.34 18.143 17.982 26.348 28.463 4.045 5.165 6.518 9.326 5.293 10.608l-.012.012-.011.011c-1.248 1.295-5.617-1.109-11.06-5.073-10.77-7.835-25.746-21.76-29.178-25.065-5.189-4.98-7.327-10.481-4.738-13.162z" class="D E B"/><use xlink:href="#B"/></g><use xlink:href="#B" class="B D E"/><use xlink:href="#C" class="C"/><use xlink:href="#C" stroke-linecap="round" stroke-linejoin="round" class="B D E"/><path d="M165.466 151.443l14.284-14.838-5.998-5.767" class="C"/><path d="M165.466 151.443l14.284-14.838-5.998-5.767" class="B D E"/><path d="M139.627 166.293l5.986 5.766 14.064-14.607" class="C"/><path d="M139.627 166.293l5.986 5.766 14.064-14.607" class="B D E"/><use xlink:href="#D" class="C"/><use xlink:href="#D" class="B D E"/><use xlink:href="#E" class="C"/><use xlink:href="#E" class="B D E"/><use xlink:href="#F" class="C"/><g class="B D E"><use xlink:href="#F"/><path d="M55.73 51.622c7.234-7.511 19.194-7.742 26.706-.508s7.742 19.195.508 26.706-19.194 7.743-26.706.508-7.743-19.195-.508-26.706z" class="C"/></g><defs ><path id="B" d="M88.839 139.945c.243 5.512.948 11.614 2.554 17.311 5.766 20.454 27.526 48.523 31.467 47.495s-2.161-14.445-2.196-25.458c-.023-7.627 1.41-13.162 3.097-17.033"/><path id="C" d="M146.526 171.123c.393 9.984 3.872 18.675 13.359 27.399 6.287 5.778 13.833 9.303 21.633 10.447 7.384 1.075 17.831.451 22.049 9.418 1.34-5.177-5.986-15.785-11.256-19.541-2.38-1.699-5.13-3.317-7.811-4.079-2.705-.763-4.704-1.098-6.923-1.468 2.577-.659 1.283-.485 4.322-.693 2.323-.151 6.148.936 9.107 1.895 5.142 1.676 14.086 8.817 17.484 13.151 7.511 9.591 16.109 19.067 28.231 17.276-11.856-4.287-14.572-17.531-16.71-27.584-1.236-5.778-2.357-11.73-6.055-17.022-1.814-2.589-4.091-4.842-6.714-6.622-.844-.566-6.564-3.213-7.754-3.028 2.993-.462 11.232 2.947 14.237 5.12 3.259 2.346 8.956 7.5 10.157 11.417.867-3.86-2.438-11.29-4.148-15.115-2.646-5.905-6.691-13.74-10.944-18.975-7.742-9.546-18.778-15.069-29.572-15.474"/><path id="D" d="M145.509 81.726c5.524.439 11.649 1.375 17.334 3.213 20.223 6.529 47.449 29.341 46.282 33.235-1.167 3.906-14.352-2.704-25.365-3.155-6.067-.254-10.851.474-14.538 1.561"/><path id="E" d="M153.448 152.761l-15.6 16.201c-2.023-1.028-6.888-3.189-13.972-6.945-8.724-4.634-20.8-11.695-35.026-22.084-11.256-8.228-23.852-18.535-37.187-31.374-19.322-18.605-32.149-41.717-39.706-62.541"/><path id="F" d="M48.486 8.09c21.09 6.772 44.664 18.698 63.998 37.314 43.855 42.226 60.068 77.494 63.616 83.827l-15.613 16.225"/></defs></svg>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 59.35% 70.4% 30.4%;" data-depth="0.2">
-                  <svg class="text-white" width="100" height="90" viewBox="0 0 100 90" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.8715 89.2559L28.5411 88.5681L25.5817 77.117L38.7756 75.0037L35.4411 62.0913L48.6485 59.9721L45.3139 47.0597L58.5079 44.9464L55.1673 32.0206L68.3747 29.9013L65.0402 16.989L78.2551 14.8502L74.553 0.457076L71.8699 1.15091L74.8352 12.6155L61.6008 14.7467L64.9549 27.6666L51.7339 29.7918L55.082 42.6982L41.8746 44.8175L45.2091 57.7299L32.0017 59.8491L35.3497 72.7555L22.1423 74.8748L25.8715 89.2559Z"/>
-                  </svg>                  
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 11.58% 89.64% 81.28%;" data-depth="-0.15">
-                  <svg class="text-warning" width="69" height="55" viewBox="0 0 69 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M56.2836 55L68.9438 53.6761L68.704 51.3308L58.6187 52.3774L58.5303 40.9663L47.1702 42.1515L47.0692 30.7279L35.709 31.9131L35.6207 20.4895L24.2479 21.6747L24.1469 10.251L12.7741 11.4363L12.6731 0L0.000184965 1.29872L0.240014 3.64399L10.338 2.61004L10.4389 14.0463L21.8117 12.8611L21.9001 24.2847L33.2729 23.1121L33.3612 34.5232L44.734 33.3379L44.8224 44.7616L56.1952 43.5764L56.2836 55Z"/>
-                  </svg>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 70.94% 54.29% 24.4%;" data-depth="-0.35">
-                  <svg class="text-warning" width="45" height="45" viewBox="0 0 45 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.5089 45C34.9147 45 45 34.9187 45 22.5C45 10.0991 34.9147 0 22.5089 0C10.1031 0 -1.8272e-06 10.0813 -1.8272e-06 22.5C-1.8272e-06 34.9187 10.1031 45 22.5089 45ZM22.5089 3.35449C33.0762 3.35449 41.662 11.9548 41.662 22.5178C41.662 33.0809 33.0583 41.6812 22.5089 41.6812C11.9417 41.6812 3.33795 33.0809 3.33795 22.5178C3.33795 11.9548 11.9417 3.35449 22.5089 3.35449Z"/>
-                  </svg>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 69.6% 92.57% 26.37%;" data-depth="-0.25">
-                  <svg class="text-white" width="39" height="38" viewBox="0 0 39 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M27.6989 38L39 11.0113L11.3011 0L7.10921e-07 26.9886L27.6989 38ZM35.6207 12.4013L26.2724 34.7074L3.37926 25.5987L12.7276 3.2926L35.6207 12.4013Z"/>
-                  </svg>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 17.48% 74.58% 79.94%;" data-depth="0.2">
-                  <div class="ratio ratio-1x1 border border-white border-2 rounded-circle"></div>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 87.38% 66.96% 11.27%;" data-depth="0.15">
-                  <div class="ratio ratio-1x1 bg-white rounded-circle"></div>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 46.23% 91.84% 52.43%;" data-depth="0.35">
-                  <div class="ratio ratio-1x1 bg-warning rounded-circle"></div>
-                </div>
-                <div class="parallax-layer d-flex align-items-end" style="padding: 0 3.6% 56.17% 94.93%;" data-depth="0.4">
-                  <div class="ratio ratio-1x1 bg-warning rounded-circle"></div>
+      <section class="pt-md-0">
+        <div class="position-relative pt-lg-3 pt-xl-4 pt-xxl-5">
+          <div
+            class="bg-secondary position-absolute top-0 start-0 w-100 h-100 rounded-5 d-md-none"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+            data-aos-offset="300"
+          ></div>
+          <div
+            class="bg-secondary position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+            data-aos-offset="300"
+          ></div>
+          <div
+            class="container px-4 px-sm-5 px-md-0 position-relative z-2 pt-md-4 pt-lg-5 pb-sm-2 pb-md-3 pb-xl-4 pb-xxl-5"
+            data-bs-theme="dark"
+          >
+            <div
+              class="row justify-content-center"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-offset="300"
+            >
+              <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center py-5">
+                <h2 class="display-3 mb-4">Redistributing Power, Collectively</h2>
+                <p class="text-body fs-xl pb-3 mb-3 mb-lg-4">
+                  Whether you're a donor, funder, or movement-rooted activist, here is everything
+                  you need to know about how our partnership can build safer, stronger, and
+                  sustainable narrative and tech power for change.
+                </p>
+                <div class="d-sm-flex justify-content-center">
+                  <a
+                    class="btn btn-lg btn-outline-dark rounded-pill w-100 w-sm-auto me-sm-4 mb-3 mb-sm-0"
+                    href="funders-donors.html"
+                    >For Donors & Funders</a
+                  >
+                  <a
+                    class="btn btn-lg btn-outline-dark rounded-pill w-100 w-sm-auto"
+                    href="movements.html"
+                    >For Movements</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- How it works (Steps) -->
+      <section class="overflow-hidden pt-5 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5">
+        <div class="container pt-2 pt-sm-4 pt-lg-5">
+          <h2 class="h1 text-center pb-3 mb-3 mb-lg-4">Our Approach</h2>
 
-        <!-- Page content -->
-        <div class="d-flex flex-column align-items-center w-lg-50 px-3 px-sm-4 px-xl-5 pt-lg-5 order-lg-1">
-
-          <!-- Logo visible on screens > 991px -->
-          <div class="w-100 d-none d-lg-block" style="max-width: 420px;">
-            <a class="navbar-brand text-dark p-0 m-0" href="index.html">
-              <span class="text-primary flex-shrink-0 me-2">
-                
-                <svg width="90" height="90" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 375">
-  <path d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z" style="fill: #010100;"/>
-  <path d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z" style="fill: #faea77;"/>
-  <path d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"/>
-  <path d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"/>
-  <path d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"/>
-  <path d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z" style="fill: #b8e084;"/>
-  <path d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z" style="fill: #de3821;"/>
-  <path d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z" style="fill: #638cca;"/>
-  <path d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z" style="fill: #638cca;"/>
-  <path d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z" style="fill: #f8e877;"/>
-</svg>
-              </span>
-              
-            </a>
-          </div>
-
-          <!-- Text + Countdown + Form -->
-          <div class="w-100 text-center text-lg-start mt-auto pt-lg-5 pb-5" style="max-width: 420px;">
-            <h1 class="display-3 mb-4">We Will Be Back Soon</h1>
-            <p class="fs-lg pb-3 mb-4 mb-xl-5">We can't wait to unveil what we've been working on, and we appreciate your patience. Thanks for being a part of our journey!</p>
-
-            <!-- Countdown -->
-            <div class="countdown d-flex flex-wrap justify-content-center justify-content-lg-start pb-3 mb-4 mb-xl-5" data-countdown-date="2025-10-31T12:00:00">
-              <div class="text-center mb-2">
-                <div class="bg-secondary rounded-1 p-2">
-                  <div class="h3 fw-medium mb-0 mx-1" data-days></div>
-                </div>
-                <span class="fs-sm">days</span>
-              </div>
-              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
-              <div class="text-center mb-2">
-                <div class="bg-secondary rounded-1 p-2">
-                  <div class="h3 fw-medium mb-0 mx-1" data-hours></div>
-                </div>
-                <span class="fs-sm">hours</span>
-              </div>
-              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
-              <div class="text-center mb-2">
-                <div class="bg-secondary rounded-1 p-2">
-                  <div class="h3 fw-medium mb-0 mx-1" data-minutes></div>
-                </div>
-                <span class="fs-sm">mins</span>
-              </div>
-              <span class="blinking text-body-secondary fs-2 mx-2">:</span>
-              <div class="text-center mb-2">
-                <div class="bg-secondary rounded-1 p-2">
-                  <div class="h3 fw-medium mb-0 mx-1" data-seconds></div>
-                </div>
-                <span class="fs-sm">secs</span>
+          <!-- Step -->
+          <div
+            class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0"
+          >
+            <div
+              class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <img
+                class="d-dark-mode-none"
+                src="assets/img/landing/saas-2/steps/01-light.png"
+                width="525"
+                alt="Image"
+              />
+              <img
+                class="d-none d-dark-mode-block"
+                src="assets/img/landing/saas-2/steps/fhr.png"
+                width="525"
+                alt="Image"
+              />
+            </div>
+            <div
+              class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <div class="pe-md-4 pe-lg-0">
+                <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4"
+                  >Methodology</span
+                >
+                <h3 class="h2 mb-3 mb-lg-4">
+                  Feminist, Holistic, and Radical Resource Redistribution (FHR3)
+                </h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  The FHR3 model is our way of treating communications and digital security as core
+                  movement infrastructure. It’s a redistribution model that goes beyond money,
+                  combining strategic communications, digital security, and trauma-aware
+                  accompaniment into one political methodology. Through FHR3, we walk alongside
+                  movements for a year, co-creating the narratives and protection systems that build
+                  for them the infrastructure and pathways for global influence. We do this through
+                  4 accompaniment approaches:
+                </p>
+                <!-- <a class="btn btn-outline-primary rounded-pill" href="#">Get connected</a> -->
               </div>
             </div>
-
-            <p class="fs-lg pb-3 mb-4 mb-xl-5">Meanwhile you can reach out to us at: 
-              <a href="mailto:Team@commsforacause.org" target="_blank" rel="noopener noreferrer">team@commsforacause.org</a></p>
-
-            <!-- Notification form -->
-            <!--<form class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email" required>
-              <button type="submit" class="btn btn-primary">Notify me</button>
-            </form>-->
           </div>
 
-          <!-- Social links -->
-          <div class="w-100 mt-auto pb-5" style="max-width: 420px;">
-            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-              
-              <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle" href="https://www.instagram.com/comms4acause/" aria-label="Instagram">
-                <i class="ai-instagram"></i>
-              </a>
-              <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="https://www.linkedin.com/company/comms4acause/" aria-label="LinkedIn">
-                <i class="ai-linkedin"></i>
-              </a>
+          <!-- Arrow -->
+          <div
+            class="d-none d-lg-flex justify-content-center"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-offset="250"
+          >
+            <svg
+              class="d-block text-primary"
+              width="339"
+              height="365"
+              viewBox="0 0 339 365"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px"
+            >
+              <path
+                d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606"
+                stroke="url(#arrow1)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-dasharray="6 6"
+              ></path>
+              <path
+                d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z"
+                fill="currentColor"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="arrow1"
+                  x1="324"
+                  y1="291.5"
+                  x2="-2.99974"
+                  y2="72.4997"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Step -->
+          <div
+            class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0"
+          >
+            <div
+              class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <img
+                class="d-dark-mode-none"
+                src="assets/img/landing/saas-2/steps/02-light.png"
+                width="473"
+                alt="Image"
+              />
+              <img
+                class="d-none d-dark-mode-block"
+                src="assets/img/landing/saas-2/steps/microfunding.png"
+                width="473"
+                alt="Image"
+              />
+            </div>
+            <div
+              class="col-md-6 col-lg-5 col-xl-4 offset-lg-1"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <div class="ps-md-4 ps-lg-0">
+                <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4"
+                  >Approach 01</span
+                >
+                <h3 class="h2 mb-3 mb-lg-4">Micro Grants</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  Our micro funding model is designed to catalyze immediate, strategic investment in
+                  communications and digital security without creating dependency or administrative
+                  burden. Each selected organization receives a flexible micro grant intended
+                  specifically to seed or strengthen their capacity in these two critical areas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div
+            class="d-none d-lg-flex justify-content-center"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-offset="250"
+          >
+            <svg
+              class="d-block text-primary"
+              width="263"
+              height="275"
+              viewBox="0 0 263 275"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px"
+            >
+              <path
+                d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702"
+                stroke="url(#arrow2)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-dasharray="6 6"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="arrow2"
+                  x1="13.9797"
+                  y1="234.5"
+                  x2="276.704"
+                  y2="60.1939"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Step -->
+          <div class="row align-items-center position-relative">
+            <div
+              class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <img
+                class="d-dark-mode-none"
+                src="assets/img/landing/saas-2/steps/03-light.png"
+                width="473"
+                alt="Image"
+              />
+              <img
+                class="d-none d-dark-mode-block"
+                src="assets/img/landing/saas-2/steps/comms.png"
+                width="473"
+                alt="Image"
+              />
+            </div>
+            <div
+              class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <div class="pe-md-4 pe-lg-0">
+                <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4"
+                  >Approach 02</span
+                >
+                <h3 class="h2 mb-3 mb-lg-4">Communications and Storytelling</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  Our communications accompaniment is embedded in a one-year, strategic partnership
+                  with each selected organization. Over the course of the year, we walk alongside
+                  organizations to co-develop communications tools, narrative infrastructure, and
+                  storytelling processes that are aligned to their work, movement ecosystem, and
+                  safety concerns.
+                </p>
+                <!-- <a class="btn btn-outline-primary rounded-pill" href="#">Get connected</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div
+            class="d-none d-lg-flex justify-content-center"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-offset="250"
+          >
+            <svg
+              class="d-block text-primary"
+              width="339"
+              height="365"
+              viewBox="0 0 339 365"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px"
+            >
+              <path
+                d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606"
+                stroke="url(#arrow1)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-dasharray="6 6"
+              ></path>
+              <path
+                d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z"
+                fill="currentColor"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="arrow1"
+                  x1="324"
+                  y1="291.5"
+                  x2="-2.99974"
+                  y2="72.4997"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Step -->
+          <div
+            class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0"
+          >
+            <div
+              class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <img
+                class="d-dark-mode-none"
+                src="assets/img/landing/saas-2/steps/02-light.png"
+                width="473"
+                alt="Image"
+              />
+              <img
+                class="d-none d-dark-mode-block"
+                src="assets/img/landing/saas-2/steps/digisec.png"
+                width="473"
+                alt="Image"
+              />
+            </div>
+            <div
+              class="col-md-6 col-lg-5 col-xl-4 offset-lg-1"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <div class="ps-md-4 ps-lg-0">
+                <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4"
+                  >Approach 03</span
+                >
+                <h3 class="h2 mb-3 mb-lg-4">Digital Security and Justice-Tech Infrastructure</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  For many movements, being seen is inseparable from being targeted. Our digital
+                  security and justice-tech accompaniment ensures that organizations are not only
+                  visible but protected. Over a one-year cycle, we work alongside movements to
+                  integrate security into the very fabric of their organizing.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div
+            class="d-none d-lg-flex justify-content-center"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-offset="250"
+          >
+            <svg
+              class="d-block text-primary"
+              width="263"
+              height="275"
+              viewBox="0 0 263 275"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px"
+            >
+              <path
+                d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702"
+                stroke="url(#arrow2)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-dasharray="6 6"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="arrow2"
+                  x1="13.9797"
+                  y1="234.5"
+                  x2="276.704"
+                  y2="60.1939"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Step -->
+          <div class="row align-items-center position-relative">
+            <div
+              class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0"
+              data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <img
+                class="d-dark-mode-none"
+                src="assets/img/landing/saas-2/steps/03-light.png"
+                width="473"
+                alt="Image"
+              />
+              <img
+                class="d-none d-dark-mode-block"
+                src="assets/img/landing/saas-2/steps/linking.png"
+                width="473"
+                alt="Image"
+              />
+            </div>
+            <div
+              class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="md"
+            >
+              <div class="pe-md-4 pe-lg-0">
+                <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4"
+                  >Approach 04</span
+                >
+                <h3 class="h2 mb-3 mb-lg-4">Linking, Learning, and Lobbying</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  Movements must not only strengthen their own infrastructure, they must also be
+                  present where global agendas on communications and digital security are being
+                  shaped. As part of our one-year accompaniment cycle, we ensure that organizations
+                  are not left out of these critical arenas by bringing them as C4AC delegation to
+                  global and regional convenings on communications, digital rights, and security.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Inner pages -->
+      <section class="overflow-hidden pt-2 pt-sm-3 pt-md-4 pt-lg-3 pb-1 pb-sm-3 pb-md-4 pb-lg-5">
+        <div class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
+          <div
+            class="position-absolute"
+            style="margin-left: -12.7%"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-offset="300"
+            data-disable-parallax-down="lg"
+          >
+            <svg
+              class="text-info d-none d-lg-block"
+              width="744"
+              height="744"
+              viewBox="0 0 744 744"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="372" cy="372" r="372"></circle>
+            </svg>
+          </div>
+          <div class="d-none d-xxl-block" style="height: 190px"></div>
+          <div class="d-none d-lg-block d-xxl-none" style="height: 150px"></div>
+          <div class="row justify-content-center justify-content-lg-start position-relative z-2">
+            <div
+              class="col-sm-10 col-md-8 col-lg-5 col-xl-4 text-center text-lg-start"
+              data-aos="fade-up"
+              data-aos-duration="850"
+              data-aos-offset="120"
+              data-disable-parallax-down="lg"
+            >
+              <div class="d-none d-lg-block">
+                <h2 class="display-5 mb-4 text-uppercase">Our Theory of Change</h2>
+                <p class="fs-lg text-dark pb-3 pb-sm-4 mb-lg-0">
+                  We believe that in an age of narrative warfare, surveillance capitalism, and
+                  digital repression, movements need new forms of infrastructure; ones that allow
+                  them to be visible without being vulnerable, resourced without being extractable,
+                  and powerful without being underprepared for it.
+                </p>
+              </div>
+              <div class="d-lg-none">
+                <h2 class="display-5 mb-4 text-uppercase">Our Theory of Change</h2>
+                <p class="fs-lg pb-3 pb-sm-4 mb-lg-0">
+                  We believe that in an age of narrative warfare, surveillance capitalism, and
+                  digital repression, movements need new forms of infrastructure; ones that allow
+                  them to be visible without being vulnerable, resourced without being extractable,
+                  and powerful without being underprepared for it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-xl-block" style="margin-top: -240px"></div>
+          <div class="d-none d-lg-block d-xl-none" style="margin-top: -160px"></div>
+          <div class="d-flex position-relative z-2 mb-3">
+            <div
+              class="flex-xxl-shrink-0 position-relative z-2"
+              style="max-width: 540px; margin-top: 26%; margin-right: -9.6%"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="400"
+              data-disable-parallax-down="lg"
+            >
+              <img
+                class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none"
+                src="assets/img/landing/intro/pages/01-light.jpg"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(65, 81, 98, 0.2)"
+              />
+              <img
+                class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block"
+                src="assets/img/C4AC/landing/theoryofchange/problem.png"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(0, 0, 0, 0.2)"
+              />
+            </div>
+            <div
+              class="flex-xxl-shrink-0 position-relative z-1"
+              style="max-width: 481px; margin-top: 17.6%; margin-right: -8.5%"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              data-disable-parallax-down="lg"
+            >
+              <img
+                class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none"
+                src="assets/img/landing/intro/pages/02-light.jpg"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(65, 81, 98, 0.2)"
+              /><img
+                class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block"
+                src="assets/img/C4AC/landing/theoryofchange/intervention.png"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(0, 0, 0, 0.2)"
+              />
+            </div>
+            <div
+              class="flex-xxl-shrink-0"
+              style="max-width: 510px"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-offset="250"
+              data-disable-parallax-down="lg"
+            >
+              <img
+                class="rounded-3 d-block d-dark-mode-none"
+                src="assets/img/landing/intro/pages/03-light.jpg"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(65, 81, 98, 0.2)"
+              /><img
+                class="border rounded-3 d-none d-dark-mode-block"
+                src="assets/img/C4AC/landing/theoryofchange/change.png"
+                alt="Page"
+                style="box-shadow: 1.875rem 0.625rem 5rem rgba(0, 0, 0, 0.2)"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-black py-5" data-bs-theme="dark">
+        <div class="container pt-2 py-sm-3 py-md-4 py-lg-5 my-xxl-3">
+          <!-- <div class="row pt-md-2 pt-lg-3 pt-xl-4 pb-lg-2 pb-xl-3">
+            <div class="col-md-6">
+              <h2 class="h1 pe-xxl-5 me-xl-4 mb-md-0">
+                Our <span class="text-warning">data centers</span> spread all over the world. Get
+                access to the API from anywhere
+              </h2>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-1">
+              <p class="text-body fs-xl mb-0">
+                Our data centers are a key component of our global infrastructure, providing
+                reliable and scalable computing resources to customers around the world. We offer a
+                highly distributed and resilient platform that can support the most demanding
+                workloads.
+              </p>
+            </div>
+          </div> -->
+          <div class="text-center mb-5 pt-1">
+            <h2 class="display-5 text-warning">Our Partners Across The World</h2>
+          </div>
+          <div class="pt-2 mt-md-3 mt-lg-4 mt-xl-5">
+            <img src="assets/img/landing/saas-4/map.png" alt="Map" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Banner -->
+      <section>
+        <div class="bg-primary py-4" data-bs-theme="dark">
+          <div class="container fs-lg text-body text-center">
+            Join us in building the infrastructure of safety, storytelling, and solidarity.
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="footer bg-secondary py-5">
+      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="border-bottom text-center pb-4">
+          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <svg
+                version="1.1"
+                width="35"
+                height="32"
+                viewBox="0 0 36 33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                  style="fill: #faea77"
+                />
+                <path
+                  d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                  style="fill: #b8e084"
+                />
+                <path
+                  d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                  style="fill: #de3821"
+                />
+                <path
+                  d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                  style="fill: #f8e877"
+                />
+              </svg>
+            </span>
+            <span>C4AC</span>
+          </a>
+          <ul class="nav justify-content-center py-1 pb-sm-2">
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="join-team.html">Join Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="media-kit.html">Media Kit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="policies.html">Policies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+          <div class="d-flex justify-content-center gap-3 order-sm-2 mb-4 mb-sm-0">
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle"
+              href="#"
+              aria-label="Instagram"
+            >
+              <i class="ai-instagram"></i>
+            </a>
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle"
+              href="#"
+              aria-label="LinkedIn"
+            >
+              <i class="ai-linkedin"></i>
+            </a>
+          </div>
+          <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+            <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
+            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener"
+              >C4AC Labs</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="20"
+          cy="20"
+          r="19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        ></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
 
     <!-- Vendor scripts: JS libraries and plugins -->
-    <script src="assets/vendor/timezz/dist/timezz.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
     <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
 
     <!-- Bootstrap + Theme scripts -->
     <script src="assets/js/theme.min.js"></script>

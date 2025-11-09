@@ -1,0 +1,1351 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+
+    <!-- SEO meta tags -->
+    <title>C4AC | Who We Are</title>
+    <meta name="description" content="C4AC | Who We Are" />
+    <meta
+      name="keywords"
+      content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative"
+    />
+    <meta name="author" content="C4AC Labs" />
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png" />
+
+    <!-- Theme switcher (color modes) -->
+    <!-- <script src="assets/js/theme-switcher.js"></script> -->
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/img-comparison-slider/dist/styles.css"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css" />
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css" />
+
+    <!-- Scroll down animated button -->
+    <style>
+      .scroll-down-btn {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .scroll-down-btn p {
+        margin-top: 1.25rem;
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.375rem;
+        text-indent: 0.375rem;
+        animation:
+          colorText 5s ease-out infinite,
+          nudgeText 5s ease-out infinite;
+      }
+      .mouse {
+        background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
+        position: relative;
+        width: 38px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 6rem;
+        background-size: 100% 200%;
+        animation:
+          colorSlide 5s linear infinite,
+          nudgeMouse 5s ease-out infinite;
+      }
+      .mouse:before,
+      .mouse:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      .mouse:before {
+        width: 34px;
+        height: 61px;
+        background-color: #121519;
+        border-radius: 6rem;
+      }
+      .mouse:after {
+        background-color: white;
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 100%;
+        animation: trackBallSlide 5s linear infinite;
+      }
+      @keyframes colorSlide {
+        0% {
+          background-position: 0% 100%;
+        }
+        20% {
+          background-position: 0% 0%;
+        }
+        21% {
+          background-color: #2c333e;
+        }
+        29.99% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        30% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        50% {
+          background-position: 0% 0%;
+        }
+        51% {
+          background-color: #2c333e;
+        }
+        59% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        60% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        80% {
+          background-position: 0% 0%;
+        }
+        81% {
+          background-color: #2c333e;
+        }
+        90%,
+        100% {
+          background-color: white;
+        }
+      }
+      @keyframes trackBallSlide {
+        0% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        6% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        14% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        15%,
+        19% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        28%,
+        29.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        30% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        36% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        44% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        45%,
+        49% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        58%,
+        59.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        66% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        74% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        75%,
+        79% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        88%,
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+      }
+      @keyframes nudgeMouse {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+        20%,
+        50%,
+        80% {
+          transform: translateY(8px);
+        }
+      }
+      @keyframes nudgeText {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+        20%,
+        50%,
+        80% {
+          transform: translateY(2px);
+        }
+      }
+      @keyframes colorText {
+        21%,
+        51%,
+        81% {
+          color: #2c333e;
+        }
+        30%,
+        60%,
+        90% {
+          color: white;
+        }
+      }
+    </style>
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme='dark'] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme='dark'] .page-loading-inner > span {
+        color: #fff;
+        opacity: 0.6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+      [data-bs-theme='dark'] .page-spinner {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      ;(function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+      <header data-bs-theme="dark">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+        <div class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand pe-sm-3" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 375 375"
+                  width="50"
+                  height="50"
+                >
+                  <path
+                    d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                    style="fill: #faea77"
+                  />
+                  <path
+                    d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                    style="fill: #b8e084"
+                  />
+                  <path
+                    d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                    style="fill: #de3821"
+                  />
+                  <path
+                    d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                    style="fill: #f8e877"
+                  />
+                </svg>
+              </span>
+            </a>
+
+            <!-- Theme switcher -->
+            <!-- <div
+              class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto"
+              data-bs-toggle="mode"
+            >
+              <input class="form-check-input" type="checkbox" id="theme-mode" />
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-sun fs-lg"></i>
+              </label>
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-moon fs-lg"></i>
+              </label>
+            </div> -->
+
+            <!-- Mobile menu toggler (Hamburger) -->
+            <button
+              class="navbar-toggler ms-sm-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar collapse (Main navigation) -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Story</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="who-we-are.html">Who We Are</a></li>
+                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Approach</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="fhr3.html">FHR3 Model</a></li>
+                    <li><a class="dropdown-item" href="microfunding.html">Micro Funding</a></li>
+                    <li>
+                      <a class="dropdown-item" href="comms-storytelling.html"
+                        >Comms & Storytelling Accompaniment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital-security-justice-tech.html"
+                        >Digital Security & Justice-Tech Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="linking-learning.html"
+                        >Linking, Learning & Lobbying</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="funders-donors.html">For Funders & Donors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movements.html">For Movements</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Resources</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="publications.html">Publications & Tools</a>
+                    </li>
+                    <li><a class="dropdown-item" href="newsroom.html">Newsroom</a></li>
+                  </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="join-team.html">Get Involved</a>
+                </li>
+              </ul>
+              <!-- <div class="d-sm-none p-3 mt-n3">
+                <a
+                  class="btn btn-primary w-100 mb-1"
+                  href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="ai-cart fs-xl me-2 ms-n1"></i>
+                  Buy now
+                </a>
+              </div> -->
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <!-- <section id="hero" class="bg-dark position-relative py-4">
+        <div class="container position-relative z-2 pt-5 pb-3 mb-0">
+          <div class="text-center mx-auto" style="max-width: 460px">
+            <h2 class="h1 text-white mb-3">We are all passionate about what we do</h2>
+
+            <svg
+              class="d-inline-block heartbeat text-danger"
+              width="52"
+              height="38" 
+              viewBox="0 0 52 38"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M52,6.3c0.8-12.6-18.6-4-24.8,1.6c-0.4,0.4-1.1,0.4-1.5,0.1C9.9-2.7-2,1.5,0.3,10
+             c1.5,5.6,16.2,20.4,25.5,27.7c0.4,0.3,1,0.3,1.4,0C36.7,29.5,51.2,19.1,52,6.3z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="hero" class="bg-dark position-relative pt-4 pb-2" style="margin-top: 100px">
+        <div class="container position-relative z-2">
+          <div class="text-center mx-auto" style="max-width: 560px">
+            <!-- <h2 class="h1 text-white mb-3">We are all passionate about what we do</h2> -->
+            <h1 class="display-5 pb-2 pb-sm-3 text-center mt-4">
+              We are all passionate about what we do
+            </h1>
+            <svg
+              class="d-inline-block heartbeat text-danger"
+              width="52"
+              height="38"
+              viewBox="0 0 52 38"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M52,6.3c0.8-12.6-18.6-4-24.8,1.6c-0.4,0.4-1.1,0.4-1.5,0.1C9.9-2.7-2,1.5,0.3,10
+             c1.5,5.6,16.2,20.4,25.5,27.7c0.4,0.3,1,0.3,1.4,0C36.7,29.5,51.2,19.1,52,6.3z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Suman quote + Process steps -->
+      <section class="overflow-hidden">
+        <div class="container pb-5 pt-2 pt-md-4 pt-lg-5 my-xl-3 my-xxl-3">
+          <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
+            <!-- CEO quote -->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px">
+                <img
+                  class="d-block position-relative z-2"
+                  src="assets/img/landing/business-consulting/Suman.png"
+                  alt="Nicolas Black"
+                />
+                <div
+                  class="bg-primary position-absolute start-0 bottom-0 w-100"
+                  style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem"
+                ></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">Suman Saurav</h2>
+                <p class="fs-xl text-body-secondary mb-2">
+                  Co-Founder, Executive Director: Strategy Communications & Partnetships
+                </p>
+                <a class="fs-xl text-body-secondary mb-2" href="mailto:suman@commsforacause.org"
+                  >suman@commsforacause.org</a
+                >
+                <div class="position-relative pt-4" style="max-width: 500px">
+                  <div
+                    class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1"
+                  >
+                    <svg
+                      class="text-border"
+                      width="155"
+                      height="111"
+                      viewBox="0 0 155 111"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"
+                      ></path>
+                      <path
+                        d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative z-2 mb-0">
+                    Suman (they/them) is a Dalit, non-binary transmasc, queer, and neurodivergent
+                    feminist hailing from a small village in Odisha, India. With over a decade in
+                    strategic communications and feminist advocacy, they’ve led global campaigns,
+                    built cross-movement alliances, and turned chaos into creative infrastructure.
+                    At C4AC Suman weaves narratives, alliances, and storytelling into tools for
+                    collective action, and believes a good meme, like good strategy, can change the
+                    world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    01
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">A fun fact about you?</h3>
+                      <p class="card-text">
+                        I’ve learned more about resilience from Naruto than most leadership
+                        trainings — dattebayo!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    02
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">What is your feminist utopia?</h3>
+                      <p class="card-text">
+                        A world without binaries, burnout, borders, or bureaucracy, and where
+                        neurodivergent, queer, Dalit joy isn’t radical, it’s just Tuesday.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="500"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    03
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Complete the narration: “Safety to me is…”
+                      </h3>
+                      <p class="card-text">
+                        …kindness, being loved, and the ability to make mistakes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    04
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        What does self/community care look like to you?
+                      </h3>
+                      <p class="card-text">
+                        Unlearning urgency, sharing snacks, and remembering we don’t have to (and
+                        can’t!) save the world alone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kabir quote + Process steps -->
+      <section class="overflow-hidden">
+        <!-- <div class="container pb-5 pt-2 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+          <div class="row pb-md-3 pb-lg-4 mb-1 mb-lg-3"> -->
+        <div class="container pb-5 pt-2 pt-md-4 pt-lg-2 my-xl-2 my-xxl-2">
+          <div class="row pb-md-3 pb-lg-4 mb-1 mb-lg-3">
+            <!-- CEO quote -->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px">
+                <img
+                  class="d-block position-relative z-2"
+                  src="assets/img/landing/business-consulting/Kabir.png"
+                  alt="Nicolas Black"
+                />
+                <div
+                  class="bg-primary position-absolute start-0 bottom-0 w-100"
+                  style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem"
+                ></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">Kabir Patil</h2>
+                <p class="fs-xl text-body-secondary mb-2">
+                  Co-Founder & Executive Director: Digital Security & Tech Infrastructure
+                </p>
+                <a class="fs-xl text-body-secondary mb-2" href="mailto:kabirjr@protonmail.com"
+                  >kabirjr@protonmail.com</a
+                >
+                <div class="position-relative pt-4" style="max-width: 500px">
+                  <div
+                    class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1"
+                  >
+                    <svg
+                      class="text-border"
+                      width="155"
+                      height="111"
+                      viewBox="0 0 155 111"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"
+                      ></path>
+                      <path
+                        d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative z-2 mb-0">
+                    Kabir (he/him) is a trans and neurodivergent digital security practitioner from
+                    India, building feminist tech that feels more like care and safety than control.
+                    With over eight years of experience in web development, and security analysis,
+                    he’s now channeling that expertise into creating safer digital infrastructures
+                    for at-risk communities. At C4AC, Kabir leads the design of privacy-first,
+                    trauma-aware systems that protect people, not just data. When he’s not debugging
+                    code or structural inequities, he’s probably over-caffeinated, overthinking, or
+                    fixing something that wasn’t broken just to make it better.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    01
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">A fun fact about you?</h3>
+                      <p class="card-text">
+                        I’ve clocked more hours in Elden Ring and Red Dead Redemption 2 than in any
+                        management meeting, and honestly, both taught me more about patience,
+                        persistence, and non-tranditional strategies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    02
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">What is your feminist utopia?</h3>
+                      <p class="card-text">
+                        A world where trans joy, open source care, and neurodivergent brilliance are
+                        just the default settings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="500"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    03
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Complete the narration: “Safety to me is…”
+                      </h3>
+                      <p class="card-text">
+                        …tech that remembers there’s a human on the other side of the screen.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    04
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        What does self/community care look like to you?
+                      </h3>
+                      <p class="card-text">
+                        Logging off without guilt, losing hours in an open-world game, and coming
+                        home to dogs who remind me what unconditional love, and good boundaries,
+                        really look like.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nimisha quote + Process steps -->
+      <section class="overflow-hidden">
+        <div class="container pb-5 pt-2 pt-md-4 pt-lg-2 my-xl-2 my-xxl-2">
+          <div class="row pb-md-3 pb-lg-4 mb-1 mb-lg-3">
+            <!-- CEO quote -->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px">
+                <img
+                  class="d-block position-relative z-2"
+                  src="assets/img/landing/business-consulting/Nimisha.png"
+                  alt="Nimisha Agarwal"
+                />
+                <div
+                  class="bg-primary position-absolute start-0 bottom-0 w-100"
+                  style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem"
+                ></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">Nimisha Agarwal</h2>
+                <p class="fs-xl text-body-secondary mb-2">Communications & Knowledge Lead</p>
+                <a class="fs-xl text-body-secondary mb-2" href="mailto:nimisha@commsforacause.org"
+                  >nimisha@commsforacause.org</a
+                >
+                <div class="position-relative pt-4" style="max-width: 500px">
+                  <div
+                    class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1"
+                  >
+                    <svg
+                      class="text-border"
+                      width="155"
+                      height="111"
+                      viewBox="0 0 155 111"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"
+                      ></path>
+                      <path
+                        d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative z-2 mb-0">
+                    Nimisha has adorned many hats. They have a PhD in Climate Change with a focus on
+                    Gender. They are a queer ecologist, feminist leader,empathetic leader, allyship
+                    mentor, climate campaigner, community mobiliser, digital fundraiser, and data
+                    nerd with expertise in strategic leadership, community mobilisation, and
+                    workshop facilitation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    01
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">A fun fact about you?</h3>
+                      <p class="card-text">
+                        I'm a double agent: I spent my college days as a cat-hater (they were tiny,
+                        furry food-thieves!), but I have since secretly defected to their side.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    02
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">What is your feminist utopia?</h3>
+                      <p class="card-text">
+                        A future where queer and disabled joy is so normal it's almost boring, and
+                        justice means we're all healing, not just punishing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="500"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    03
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Complete the narration, “Safety to me is…”
+                      </h3>
+                      <p class="card-text">
+                        the freedom to be exhausted, opinionated, neurodivergent, and queer all at
+                        once, and still be held in a place of respect and love.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    04
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        What does self/community care look like to you?
+                      </h3>
+                      <p class="card-text">
+                        It’s a care potluck—we all bring what we can. You bring the snacks, I'll
+                        bring the JEDI policy review, and we both agree that napping is a valid
+                        political action.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Urvi(AKA June) quote + Process steps -->
+      <section class="overflow-hidden">
+        <div class="container pb-3 pt-2 pt-md-4 pt-lg-2 my-xl-2 my-xxl-2">
+          <div class="row pb-md-3 pb-lg-4 mb-1 mb-lg-3">
+            <!-- CEO quote -->
+            <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+              <div class="position-relative" style="max-width: 416px">
+                <img
+                  class="d-block position-relative z-2"
+                  src="assets/img/landing/business-consulting/June.png"
+                  alt="Nimisha Agarwal"
+                />
+                <div
+                  class="bg-primary position-absolute start-0 bottom-0 w-100"
+                  style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem"
+                ></div>
+              </div>
+              <div class="text-center text-md-start pt-3 mt-3">
+                <h2 class="mb-2">Urvi Rayudu</h2>
+                <p class="fs-xl text-body-secondary mb-2">Illustrator</p>
+
+                <a class="fs-xl text-body-secondary mb-2" href="mailto:urvi@commsforacause.org"
+                  >urvi@commsforacause.org</a
+                >
+
+                <div class="position-relative pt-4" style="max-width: 500px">
+                  <div
+                    class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1"
+                  >
+                    <svg
+                      class="text-border"
+                      width="155"
+                      height="111"
+                      viewBox="0 0 155 111"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"
+                      ></path>
+                      <path
+                        d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="fs-xl position-relative z-2 mb-0">
+                    Urvi (aka June), is a digital artist from Hyderabad, India. In her work, she
+                    creates art that’s people-centric, generally bold, and upholds my feminist
+                    values.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    01
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">A fun fact about you?</h3>
+                      <p class="card-text">
+                        I write stories! I do this in multiple ways - could be with or without other
+                        writer friends, and generally comes in the form of short stories, comic
+                        scripts, or collaborative plot or world building (including rpgs).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    02
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">What is your feminist utopia?</h3>
+                      <p class="card-text">
+                        My feminist utopia looks like a world where all systems of oppression, not
+                        just the ones based on gender but also those of sexuality, caste, class,
+                        race and ability, are toppled by an inclusive and diverse society that
+                        prioritises equality, care, respect and personal autonomy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="500"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    03
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Complete the narration, “Safety to me is…”
+                      </h3>
+                      <p class="card-text">
+                        Community and autonomy. My closest friends are people that believe in the
+                        causes I believe in, and they’ve created a net strong enough for me to have
+                        the opportunity to make some radical decisions - decisions that make my
+                        world a safer place all the more.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="btn btn-lg btn-icon btn-primary fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none"
+                  >
+                    04
+                  </div>
+                  <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem)">
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        What does self/community care look like to you?
+                      </h3>
+                      <p class="card-text">
+                        Calling (or better yet, meeting) your friends as often as physically
+                        possible. It sounds simple enough but it’s harder said than done - today’s
+                        world is built to tempt you into convenience, but convenience is the cost of
+                        community.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Banner -->
+      <section>
+        <div class="bg-primary py-4" data-bs-theme="dark">
+          <div class="container fs-lg text-body text-center">
+            Join us in building the infrastructure of safety, storytelling, and solidarity.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary py-5">
+      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="border-bottom text-center pb-4">
+          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <svg
+                version="1.1"
+                width="35"
+                height="32"
+                viewBox="0 0 36 33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                  style="fill: #faea77"
+                />
+                <path
+                  d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                  style="fill: #b8e084"
+                />
+                <path
+                  d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                  style="fill: #de3821"
+                />
+                <path
+                  d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                  style="fill: #f8e877"
+                />
+              </svg>
+            </span>
+            <span>C4AC</span>
+          </a>
+          <ul class="nav justify-content-center py-1 pb-sm-2">
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="join-team.html">Join Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="media-kit.html">Media Kit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="policies.html">Policies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+          <div class="d-flex justify-content-center gap-3 order-sm-2 mb-4 mb-sm-0">
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle"
+              href="#"
+              aria-label="Instagram"
+            >
+              <i class="ai-instagram"></i>
+            </a>
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle"
+              href="#"
+              aria-label="LinkedIn"
+            >
+              <i class="ai-linkedin"></i>
+            </a>
+          </div>
+          <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+            <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
+            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener"
+              >C4AC Labs</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="20"
+          cy="20"
+          r="19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        ></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

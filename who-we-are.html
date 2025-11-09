@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+
+    <!-- SEO meta tags -->
+    <title>C4AC | Our Story</title>
+    <meta name="description" content="C4AC | Our Story" />
+    <meta
+      name="keywords"
+      content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, light and dark mode, html5, css3, javascript, gallery, slider, touch, creative"
+    />
+    <meta name="author" content="C4AC Labs" />
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png" />
+
+    <!-- Theme switcher (color modes) -->
+    <!-- <script src="assets/js/theme-switcher.js"></script> -->
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+      id="google-font"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="assets/vendor/img-comparison-slider/dist/styles.css"
+    />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css" />
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css" />
+
+    <!-- Scroll down animated button -->
+    <style>
+      .scroll-down-btn {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .scroll-down-btn p {
+        margin-top: 1.25rem;
+        color: white;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.375rem;
+        text-indent: 0.375rem;
+        animation:
+          colorText 5s ease-out infinite,
+          nudgeText 5s ease-out infinite;
+      }
+      .mouse {
+        background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
+        position: relative;
+        width: 38px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 6rem;
+        background-size: 100% 200%;
+        animation:
+          colorSlide 5s linear infinite,
+          nudgeMouse 5s ease-out infinite;
+      }
+      .mouse:before,
+      .mouse:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      .mouse:before {
+        width: 34px;
+        height: 61px;
+        background-color: #121519;
+        border-radius: 6rem;
+      }
+      .mouse:after {
+        background-color: white;
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 100%;
+        animation: trackBallSlide 5s linear infinite;
+      }
+      @keyframes colorSlide {
+        0% {
+          background-position: 0% 100%;
+        }
+        20% {
+          background-position: 0% 0%;
+        }
+        21% {
+          background-color: #2c333e;
+        }
+        29.99% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        30% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        50% {
+          background-position: 0% 0%;
+        }
+        51% {
+          background-color: #2c333e;
+        }
+        59% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        60% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        80% {
+          background-position: 0% 0%;
+        }
+        81% {
+          background-color: #2c333e;
+        }
+        90%,
+        100% {
+          background-color: white;
+        }
+      }
+      @keyframes trackBallSlide {
+        0% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        6% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        14% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        15%,
+        19% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        28%,
+        29.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        30% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        36% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        44% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        45%,
+        49% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        58%,
+        59.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        66% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        74% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        75%,
+        79% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        88%,
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+      }
+      @keyframes nudgeMouse {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+        20%,
+        50%,
+        80% {
+          transform: translateY(8px);
+        }
+      }
+      @keyframes nudgeText {
+        0%,
+        30%,
+        60%,
+        90% {
+          transform: translateY(0);
+        }
+        20%,
+        50%,
+        80% {
+          transform: translateY(2px);
+        }
+      }
+      @keyframes colorText {
+        21%,
+        51%,
+        81% {
+          color: #2c333e;
+        }
+        30%,
+        60%,
+        90% {
+          color: white;
+        }
+      }
+    </style>
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all 0.4s 0.2s ease-in-out;
+        transition: all 0.4s 0.2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme='dark'] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme='dark'] .page-loading-inner > span {
+        color: #fff;
+        opacity: 0.6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: 0.75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner 0.75s linear infinite;
+        animation: spinner 0.75s linear infinite;
+      }
+      [data-bs-theme='dark'] .page-spinner {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      ;(function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+      <header data-bs-theme="dark">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+        <div class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <!-- Navbar brand (Logo) -->
+            <a class="navbar-brand pe-sm-3" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 375 375"
+                  width="50"
+                  height="50"
+                >
+                  <path
+                    d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                    style="fill: #faea77"
+                  />
+                  <path
+                    d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                    style="fill: #ffffff"
+                  />
+                  <path
+                    d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                    style="fill: #b8e084"
+                  />
+                  <path
+                    d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                    style="fill: #de3821"
+                  />
+                  <path
+                    d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                    style="fill: #638cca"
+                  />
+                  <path
+                    d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                    style="fill: #f8e877"
+                  />
+                </svg>
+              </span>
+            </a>
+
+            <!-- Theme switcher
+            <div
+              class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto"
+              data-bs-toggle="mode"
+            >
+              <input class="form-check-input" type="checkbox" id="theme-mode" />
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-sun fs-lg"></i>
+              </label>
+              <label class="form-check-label" for="theme-mode">
+                <i class="ai-moon fs-lg"></i>
+              </label>
+            </div> -->
+
+            <!-- <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
+              <i class="ai-cart fs-xl me-2 ms-n1"></i>
+              Buy now
+            </a> -->
+
+            <!-- Mobile menu toggler (Hamburger) -->
+            <button
+              class="navbar-toggler ms-sm-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar collapse (Main navigation) -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Story</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Who We Are</a></li>
+                    <li><a class="dropdown-item" href="about-team.html">Our Team</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Our Approach</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="fhr3.html">FHR3 Model</a></li>
+                    <li><a class="dropdown-item" href="microfunding.html">Micro Funding</a></li>
+                    <li>
+                      <a class="dropdown-item" href="comms-storytelling.html"
+                        >Comms & Storytelling Accompaniment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital-security-justice-tech.html"
+                        >Digital Security & Justice-Tech Infrastructure</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="linking-learning.html"
+                        >Linking, Learning & Lobbying</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="funders-donors.html">For Funders & Donors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="movements.html">For Movements</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                    >Resources</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="publications.html">Publications & Tools</a>
+                    </li>
+                    <li><a class="dropdown-item" href="newsroom.html">Newsroom</a></li>
+                  </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="join-team.html">Get Involved</a>
+                </li>
+              </ul>
+              <!-- <div class="d-sm-none p-3 mt-n3">
+                <a
+                  class="btn btn-primary w-100 mb-1"
+                  href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="ai-cart fs-xl me-2 ms-n1"></i>
+                  Buy now
+                </a> -->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero -->
+      <section class="bg-dark position-relative py-5">
+        <div
+          class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100"
+          style="background-color: rgba(255, 255, 255, 0.03)"
+        ></div>
+        <div class="container position-relative z-2 py-5 mb-4 mb-sm-5" data-bs-theme="dark">
+          <div class="row pb-5 mb-2 mb-sm-0 mb-lg-3">
+            <div class="col-lg-10 col-xl-9 mx-auto text-center mt-6">
+              <h1 class="display-5 pb-2 pb-sm-3 text-center mt-4">Our Story</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="container position-relative z-3" style="margin-top: -135px">
+        <div class="rounded-5 overflow-hidden">
+          <div class="jarallax ratio ratio-16x9" data-jarallax data-speed="0.6">
+            <div
+              class="jarallax-img"
+              style="background-image: url(assets/img/C4AC/ourstory/ourstoryhero.png)"
+            ></div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-n2 mt-sm-0 mt-md-2 mt-lg-4 mt-xl-5">
+          <div class="col-md-6 col-lg-5">
+            <div class="fs-sm text-uppercase mb-3">Who we are</div>
+            <h2 class="display-6">
+              Comms for a Cause: A Response to Authoritarian Narrative Warfare and Structural
+              Invisibility
+            </h2>
+          </div>
+          <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-2 pt-1 pt-sm-2 pt-md-5">
+            <p class="fs-xl">
+              We are living in a time when the power of communications has never been more
+              weaponized, or crucial to resistance.
+            </p>
+            <p class="fs-xl">
+              Across the globe, authoritarian regimes understand something many movements have been
+              forced to overlook: communications is power. Strategic communications is no longer an
+              add on. It is the primary infrastructure through which undemocratic governments and
+              institutions build dominance, manufacture legitimacy, spread disinformation, and
+              suppress dissent.
+            </p>
+            <!-- <p class="fs-xl mb-0">In countries like India, Brazil, Hungary, and beyond, governments deploy highly coordinated comms strategies to create mythologies of control, smear activists, and neutralize opposition. At the same time, in places like Kashmir, Myanmar, China, and Russia, activists and grassroots movements are being cut off from the very tools they need to speak, organize, and be heard through internet shutdowns, social media censorship, algorithmic suppression, and legal crackdowns.</p> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Post content -->
+      <section class="container pt-5 mt-md-2 mt-lg-3 mt-xl-4">
+        <div class="row justify-content-center pt-xxl-2">
+          <div class="col-lg-14 col-xl-13">
+            <p class="fs-xl">
+              In countries like India, Brazil, Hungary, and beyond, governments deploy highly
+              coordinated comms strategies to create mythologies of control, smear activists, and
+              neutralize opposition. At the same time, in places like Kashmir, Myanmar, China, and
+              Russia, activists and grassroots movements are being cut off from the very tools they
+              need to speak, organize, and be heard through internet shutdowns, social media
+              censorship, algorithmic suppression, and legal crackdowns.
+            </p>
+            <p class="fs-xl">
+              And it is not a coincidence that most major visibility platforms are owned by
+              billionaires aligned with authoritarian institutions and powers. Their mutual gain is
+              clear: the amplification of far-right ideology and capitalist surveillance in exchange
+              for narrative control and cultural dominance. This results in a global digital
+              ecosystem that prioritizes profit and control over truth and justice, making it nearly
+              impossible for frontline movements to survive, let alone thrive.
+            </p>
+            <p class="fs-xl">
+              Yet despite this reality, communications and digital security remain severely
+              underfunded, overlooked, and deprioritized in philanthropy and progressive movement
+              ecosystems. Comms is often treated as branding. Tech is treated as a luxury. Safety is
+              treated as individual responsibility. And movements are collapsing as a result.
+            </p>
+            <p class="fs-xl"><strong>C4AC exists to change that.</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dscription section #1 assets/img/shop/single/vision.png -->
+      <section class="container pb-4 pb-md-5 mb-lg-4">
+        <div
+          class="bg-size-cover bg-repeat-0 bg-position-center rounded-1 mb-md-2 py-xl-4 py-xxl-5"
+          style="background-image: url(assets/img/C4AC/ourstory/vision.png)"
+        >
+          <div class="row py-lg-5">
+            <div class="col-md-9 offset-md-2 col-lg-7 offset-lg-4 col-xl-6 offset-xl-5 py-5">
+              <div class="bg-light rounded-1 mx-4 p-4 p-md-5">
+                <div class="py-3 p-sm-3">
+                  <h2 class="h3 mb-sm-4">Vision</h2>
+                  <p>
+                    We envision a world where grassroots movements, especially those led by queer,
+                    trans, Dalit, disabled, Indigenous, and feminist communities, have the tools,
+                    safety, and power to shape a just, equitable, and sustainable future.
+                  </p>
+                  <p>
+                    We believe that
+                    <strong>strengthened movements strengthen movements.</strong> Every campaign,
+                    every action, every collective led by marginalized people is already
+                    contributing to a world free from violence, exploitation, discrimination, and
+                    climate catastrophe. But to do this work with power, safety, and assurance,
+                    movements need infrastructure that protects as much as it uplifts.
+                  </p>
+                  <p>
+                    At Comms for a Cause, we imagine a future where movements can speak to donors,
+                    influence policy makers, confront anti-rights forces, organize across borders,
+                    and mobilize their communities
+                    <strong>without compromising their safety or values.</strong>A future where
+                    visibility does not come at the cost of protection
+                  </p>
+                  <p>
+                    We are building toward
+                    <strong>deep-rooted, unapologetically political movements</strong> are secure,
+                    resourced, and able to thrive on their own terms. Movements where every strategy
+                    includes care, every plan includes protection, and every voice, no matter how
+                    marginalized, can be heard without fear.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dscription section #2 -->
+      <section class="container pb-1 mb-sm-2 mb-lg-3 mb-xl-4 mb-xxl-5">
+        <div class="row align-items-center pb-md-3">
+          <div class="col-md-6 col-lg-5 mb-4 mb-md-0">
+            <img class="rounded-1" src="assets/img/shop/single/mission.png" alt="Image" />
+          </div>
+          <div class="col-md-6 col-lg-5 offset-lg-1">
+            <div class="ps-md-4 ps-lg-0">
+              <h2 class="h3 mb-sm-4">Mission</h2>
+              <p class="">
+                Comms for a Cause builds infrastructure for movement safety, storytelling, and
+                sustainability through a model we call
+                <strong>Feminist, Holistic, and Radical Resource Redistribution (FHR3).</strong> Our
+                mission is to redistribute not just funds, but strategic, technical, and emotional
+                resources, meeting grassroots organizations where they are and walking alongside
+                them as they implement bold, values-aligned visions.
+              </p>
+              <p>We focus on two of the most underfunded yet essential pillars of movement work:</p>
+              <ul>
+                <li class="mb-1">
+                  <strong>Storytelling led communications,</strong> to mobilize resources, shift
+                  discourse, and build alliances;
+                </li>
+                <li class="mb-1">
+                  <strong>Digital security based tech infrastructure,</strong> to survive
+                  censorship, navigate risk, and sustain organizing without burnout or fear.
+                </li>
+              </ul>
+              <p>
+                Through trauma-informed,
+                <strong>strategic, creative, and justice tech–rooted accompaniment,</strong>we work
+                alongside queer, trans, disabled, Dalit, neurodivergent, and feminist-led groups to
+                build the communications and safety infrastructure they need to thrive and resist
+                <strong>repression, violence, and authoritarianism.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="container pt-1 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5 mb-4">
+        <h2 class="h1 text-center pt-3 pt-sm-4 pt-lg-5 pb-3 mb-3 mb-lg-4 mt-xl-3">Our Goals</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-primary mb-4 mx-auto"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M37.805 15.6567L34.6717 15.2583C34.4133 14.4633 34.095 13.6967 33.7233 12.9683L35.6583 10.4767C36.4417 9.46833 36.35 8.045 35.455 7.17833L32.83 4.55333C31.955 3.65 30.5317 3.56 29.5217 4.34167L27.0333 6.27667C26.305 5.905 25.5383 5.58667 24.7417 5.32833L24.3433 2.2C24.1933 0.945 23.1283 0 21.8667 0H18.1333C16.8717 0 15.8067 0.945 15.6567 2.195L15.2583 5.32833C14.4617 5.58667 13.695 5.90333 12.9667 6.27667L10.4767 4.34167C9.47 3.56 8.04667 3.65 7.17833 4.545L4.55333 7.16833C3.65 8.045 3.55833 9.46833 4.34167 10.4783L6.27667 12.9683C5.90333 13.6967 5.58667 14.4633 5.32833 15.2583L2.2 15.6567C0.945 15.8067 0 16.8717 0 18.1333V21.8667C0 23.1283 0.945 24.1933 2.195 24.3433L5.32833 24.7417C5.58667 25.5367 5.905 26.3033 6.27667 27.0317L4.34167 29.5233C3.55833 30.5317 3.65 31.955 4.545 32.8217L7.17 35.4467C8.04667 36.3483 9.46833 36.4383 10.4783 35.6567L12.9683 33.7217C13.6967 34.095 14.4633 34.4133 15.2583 34.67L15.6567 37.7967C15.8067 39.055 16.8717 40 18.1333 40H21.8667C23.1283 40 24.1933 39.055 24.3433 37.805L24.7417 34.6717C25.5367 34.4133 26.3033 34.095 27.0317 33.7233L29.5233 35.6583C30.5317 36.4417 31.955 36.35 32.8217 35.455L35.4467 32.83C36.35 31.9533 36.4417 30.5317 35.6583 29.5217L33.7233 27.0317C34.0967 26.3033 34.415 25.5367 34.6717 24.7417L37.7983 24.3433C39.0533 24.1933 39.9983 23.1283 39.9983 21.8667V18.1333C40 16.8717 39.055 15.8067 37.805 15.6567ZM20 28.3333C15.405 28.3333 11.6667 24.595 11.6667 20C11.6667 15.405 15.405 11.6667 20 11.6667C24.595 11.6667 28.3333 15.405 28.3333 20C28.3333 24.595 24.595 28.3333 20 28.3333Z"
+                      ></path>
+                    </svg>
+                    <h4 class="card-text fs-xl">
+                      Strengthen communications and digital security infrastructure for grassroots
+                      organizations who are the roots of global feminist movement building
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-primary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M30.244 12.5253L27.7373 12.2067C27.5307 11.5707 27.276 10.9573 26.9787 10.3747L28.5267 8.38133C29.1533 7.57467 29.08 6.436 28.364 5.74267L26.264 3.64267C25.564 2.92 24.4253 2.848 23.6173 3.47333L21.6267 5.02133C21.044 4.724 20.4307 4.46933 19.7933 4.26267L19.4747 1.76C19.3547 0.756 18.5027 0 17.4933 0H14.5067C13.4973 0 12.6453 0.756 12.5253 1.756L12.2067 4.26267C11.5693 4.46933 10.956 4.72267 10.3733 5.02133L8.38133 3.47333C7.576 2.848 6.43733 2.92 5.74267 3.636L3.64267 5.73467C2.92 6.436 2.84667 7.57467 3.47333 8.38267L5.02133 10.3747C4.72267 10.9573 4.46933 11.5707 4.26267 12.2067L1.76 12.5253C0.756 12.6453 0 13.4973 0 14.5067V17.4933C0 18.5027 0.756 19.3547 1.756 19.4747L4.26267 19.7933C4.46933 20.4293 4.724 21.0427 5.02133 21.6253L3.47333 23.6187C2.84667 24.4253 2.92 25.564 3.636 26.2573L5.736 28.3573C6.43733 29.0787 7.57467 29.1507 8.38267 28.5253L10.3747 26.9773C10.9573 27.276 11.5707 27.5307 12.2067 27.736L12.5253 30.2373C12.6453 31.244 13.4973 32 14.5067 32H17.4933C18.5027 32 19.3547 31.244 19.4747 30.244L19.7933 27.7373C20.4293 27.5307 21.0427 27.276 21.6253 26.9787L23.6187 28.5267C24.4253 29.1533 25.564 29.08 26.2573 28.364L28.3573 26.264C29.08 25.5627 29.1533 24.4253 28.5267 23.6173L26.9787 21.6253C27.2773 21.0427 27.532 20.4293 27.7373 19.7933L30.2387 19.4747C31.2427 19.3547 31.9987 18.5027 31.9987 17.4933V14.5067C32 13.4973 31.244 12.6453 30.244 12.5253ZM16 22.6667C12.324 22.6667 9.33333 19.676 9.33333 16C9.33333 12.324 12.324 9.33333 16 9.33333C19.676 9.33333 22.6667 12.324 22.6667 16C22.6667 19.676 19.676 22.6667 16 22.6667Z"
+                      ></path>
+                    </svg>
+                    <h5 class="fs-lg card-text text-white opacity-70">
+                      We aim to equip frontline movements with the tools, skills, and systems to be
+                      visible without being vulnerable. This includes narrative clarity, secure
+                      communications, crisis response protocols, and sustainable internal
+                      infrastructure.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-danger mb-4 mx-auto"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M37.0833 13.3335H2.91669C1.31669 13.3335 0 14.6502 0 16.2502V37.0835C0 38.6835 1.31669 40.0002 2.91669 40.0002H37.0834C38.6834 40.0002 40.0001 38.6835 40.0001 37.0835V16.2502C40 14.6502 38.6833 13.3335 37.0833 13.3335ZM35 21.2502V32.0835C35 33.6835 33.7 35.0002 32.0833 35.0002H22.9167C21.3 35.0002 20 33.6835 20 32.0835V21.2502C20 19.6502 21.3 18.3335 22.9167 18.3335H32.0834C33.7 18.3335 35 19.6502 35 21.2502ZM15.4167 27.5002H6.25C5.56669 27.5002 5 26.9335 5 26.2502C5 25.5669 5.56669 25.0002 6.25 25.0002H15.4167C16.1 25.0002 16.6667 25.5669 16.6667 26.2502C16.6667 26.9335 16.1 27.5002 15.4167 27.5002ZM16.6667 31.2502C16.6667 31.9335 16.1 32.5002 15.4167 32.5002H6.25C5.56669 32.5002 5 31.9335 5 31.2502C5 30.5669 5.56669 30.0002 6.25 30.0002H15.4167C16.1 30.0002 16.6667 30.5669 16.6667 31.2502ZM15.4167 22.5002H6.25C5.56669 22.5002 5 21.9335 5 21.2502C5 20.5669 5.56669 20.0002 6.25 20.0002H15.4167C16.1 20.0002 16.6667 20.5669 16.6667 21.2502C16.6667 21.9335 16.1 22.5002 15.4167 22.5002Z"
+                      ></path>
+                      <path
+                        d="M37.0859 0H16.2526C14.6443 0 13.3359 1.30835 13.3359 2.91669V7.08339C13.3359 8.69173 14.6443 10.0001 16.2526 10.0001H37.0859C38.6943 10 40.0026 8.69165 40.0026 7.08331V2.91669C40.0026 1.30835 38.6943 0 37.0859 0Z"
+                      ></path>
+                      <path
+                        d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z"
+                      ></path>
+                    </svg>
+                    <h4 class="card-text fs-xl">
+                      Embed feminist, trauma-informed, and justice-tech practices into movement
+                      building
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-danger rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29.6664 10.667H2.33334C1.05335 10.667 0 11.7203 0 13.0003V29.6669C0 30.9468 1.05335 32.0002 2.33334 32.0002H29.6665C30.9465 32.0002 31.9998 30.9468 31.9998 29.6669V13.0003C31.9998 11.7203 30.9464 10.667 29.6664 10.667ZM27.9998 17.0003V25.6669C27.9998 26.9469 26.9598 28.0002 25.6665 28.0002H18.3332C17.0399 28.0002 15.9999 26.9469 15.9999 25.6669V17.0003C15.9999 15.7203 17.0399 14.667 18.3332 14.667H25.6665C26.9598 14.667 27.9998 15.7203 27.9998 17.0003ZM12.3333 22.0003H4.99997C4.45332 22.0003 3.99997 21.5469 3.99997 21.0003C3.99997 20.4536 4.45332 20.0003 4.99997 20.0003H12.3333C12.8799 20.0003 13.3333 20.4536 13.3333 21.0003C13.3333 21.5469 12.8799 22.0003 12.3333 22.0003ZM13.3333 25.0002C13.3333 25.5469 12.8799 26.0002 12.3333 26.0002H4.99997C4.45332 26.0002 3.99997 25.5469 3.99997 25.0002C3.99997 24.4536 4.45332 24.0003 4.99997 24.0003H12.3333C12.8799 24.0003 13.3333 24.4536 13.3333 25.0002ZM12.3333 18.0003H4.99997C4.45332 18.0003 3.99997 17.5469 3.99997 17.0003C3.99997 16.4537 4.45332 16.0003 4.99997 16.0003H12.3333C12.8799 16.0003 13.3333 16.4537 13.3333 17.0003C13.3333 17.5469 12.8799 18.0003 12.3333 18.0003Z"
+                      ></path>
+                      <path
+                        d="M29.6639 0H12.9974C11.7107 0 10.6641 1.04667 10.6641 2.33334V5.66667C10.6641 6.95334 11.7107 8.00001 12.9974 8.00001H29.6639C30.9506 7.99994 31.9973 6.95327 31.9973 5.66661V2.33334C31.9973 1.04667 30.9506 0 29.6639 0Z"
+                      ></path>
+                      <path
+                        d="M3.99997 7.99994C6.2091 7.99994 7.99994 6.2091 7.99994 3.99997C7.99994 1.79085 6.2091 0 3.99997 0C1.79085 0 0 1.79085 0 3.99997C0 6.2091 1.79085 7.99994 3.99997 7.99994Z"
+                      ></path>
+                    </svg>
+                    <h5 class="fs-lg card-text text-white opacity-70">
+                      You can easily identify interdependencies between different indicators,
+                      identify tendencies and prevent potential difficulties and problems.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-info mb-4 mx-auto"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M32.6213 22.7824C26.4943 23.0213 20.6934 24.6146 15.525 27.255L8.87893 31.0927C7.12129 32.1061 4.87665 31.4978 3.86795 29.7493L0.49035 23.9008C-0.520513 22.1491 0.0820047 19.9007 1.83372 18.8898L7.33997 15.7103C7.65881 15.5262 8.06657 15.6354 8.25074 15.9543L12.5774 23.4483C12.7647 23.7727 13.1836 23.8804 13.5051 23.6822C13.816 23.4905 13.9009 23.074 13.7182 22.7577L9.36036 15.2095C9.18727 14.9097 9.27227 14.5269 9.55686 14.3297C14.1026 11.1781 17.9484 7.16404 20.9018 2.48266C22.0206 0.707687 24.6278 0.755188 25.6794 2.57599L34.9289 18.5981C35.9801 20.415 34.7215 22.7007 32.6213 22.7824ZM33.8082 11.6236C34.1506 9.6637 33.0019 7.69797 31.1452 7.02512C30.5616 6.81361 30.0322 7.44872 30.3425 7.98632C31.0812 9.2661 31.8225 10.5503 32.5721 11.8482C32.8853 12.3903 33.7004 12.2404 33.8082 11.6236ZM18.4184 35.2136L15.2546 29.7215C15.0708 29.4024 14.6625 29.2929 14.3434 29.477C12.6288 30.4663 12.564 30.5047 10.2768 31.8249C9.95788 32.009 9.84821 32.417 10.0324 32.736L13.2016 38.2245C13.6078 38.9274 14.3384 39.3096 15.0824 39.3096C15.8041 39.3096 16.0801 39.0654 17.625 38.1737C18.66 37.5762 19.0159 36.2478 18.4184 35.2136ZM38.676 6.55444C38.9948 6.37035 39.1041 5.96259 38.92 5.64375C38.736 5.32499 38.3284 5.21557 38.0093 5.39974L36.2843 6.39569C35.694 6.73653 35.9409 7.63989 36.6183 7.63989C36.8554 7.63981 36.8079 7.63297 38.676 6.55444ZM32.5456 3.09976L32.9663 1.53004C33.0616 1.17437 32.8505 0.808857 32.495 0.713521C32.139 0.618351 31.7737 0.829274 31.6783 1.18495L31.2577 2.75466C31.1444 3.17734 31.4629 3.5941 31.902 3.5941C32.1964 3.59402 32.4658 3.3976 32.5456 3.09976ZM39.9772 13.6731C40.0725 13.3175 39.8613 12.9519 39.5057 12.8566L37.9359 12.436C37.5803 12.3409 37.2148 12.5519 37.1194 12.9075C37.0241 13.2631 37.2353 13.6286 37.5909 13.724C39.3076 14.184 39.2134 14.1675 39.3336 14.1675C39.6279 14.1675 39.8973 13.971 39.9772 13.6731Z"
+                      ></path>
+                    </svg>
+                    <h4 class="card-text fs-xl">
+                      Build collective narrative power systems against authoritarianism
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-info rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M32.6213 22.7824C26.4943 23.0213 20.6934 24.6146 15.525 27.255L8.87893 31.0927C7.12129 32.1061 4.87665 31.4978 3.86795 29.7493L0.49035 23.9008C-0.520513 22.1491 0.0820047 19.9007 1.83372 18.8898L7.33997 15.7103C7.65881 15.5262 8.06657 15.6354 8.25074 15.9543L12.5774 23.4483C12.7647 23.7727 13.1836 23.8804 13.5051 23.6822C13.816 23.4905 13.9009 23.074 13.7182 22.7577L9.36036 15.2095C9.18727 14.9097 9.27227 14.5269 9.55686 14.3297C14.1026 11.1781 17.9484 7.16404 20.9018 2.48266C22.0206 0.707687 24.6278 0.755188 25.6794 2.57599L34.9289 18.5981C35.9801 20.415 34.7215 22.7007 32.6213 22.7824ZM33.8082 11.6236C34.1506 9.6637 33.0019 7.69797 31.1452 7.02512C30.5616 6.81361 30.0322 7.44872 30.3425 7.98632C31.0812 9.2661 31.8225 10.5503 32.5721 11.8482C32.8853 12.3903 33.7004 12.2404 33.8082 11.6236ZM18.4184 35.2136L15.2546 29.7215C15.0708 29.4024 14.6625 29.2929 14.3434 29.477C12.6288 30.4663 12.564 30.5047 10.2768 31.8249C9.95788 32.009 9.84821 32.417 10.0324 32.736L13.2016 38.2245C13.6078 38.9274 14.3384 39.3096 15.0824 39.3096C15.8041 39.3096 16.0801 39.0654 17.625 38.1737C18.66 37.5762 19.0159 36.2478 18.4184 35.2136ZM38.676 6.55444C38.9948 6.37035 39.1041 5.96259 38.92 5.64375C38.736 5.32499 38.3284 5.21557 38.0093 5.39974L36.2843 6.39569C35.694 6.73653 35.9409 7.63989 36.6183 7.63989C36.8554 7.63981 36.8079 7.63297 38.676 6.55444ZM32.5456 3.09976L32.9663 1.53004C33.0616 1.17437 32.8505 0.808857 32.495 0.713521C32.139 0.618351 31.7737 0.829274 31.6783 1.18495L31.2577 2.75466C31.1444 3.17734 31.4629 3.5941 31.902 3.5941C32.1964 3.59402 32.4658 3.3976 32.5456 3.09976ZM39.9772 13.6731C40.0725 13.3175 39.8613 12.9519 39.5057 12.8566L37.9359 12.436C37.5803 12.3409 37.2148 12.5519 37.1194 12.9075C37.0241 13.2631 37.2353 13.6286 37.5909 13.724C39.3076 14.184 39.2134 14.1675 39.3336 14.1675C39.6279 14.1675 39.8973 13.971 39.9772 13.6731Z"
+                      ></path>
+                    </svg>
+                    <h5 class="fs-lg card-text text-white opacity-70">
+                      We aim to position communications as infrastructure, creating systems that
+                      counter disinformation, resist disinformation campaigns, and strengthen
+                      democratic discourse through movement-rooted storytelling.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <!-- <div class="col">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg class="d-block text-info mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.11125 25.5903H5.55542C6.16903 25.5903 6.66667 26.0876 6.66667 26.7012V37.8124C6.66667 38.426 6.16903 38.9237 5.55542 38.9237H1.11125C0.49764 38.9237 0 38.426 0 37.8124V26.7012C0 26.0876 0.49764 25.5903 1.11125 25.5903Z"></path>
+                      <path d="M12.2202 16.7012H16.6648C17.2784 16.7012 17.776 17.1988 17.776 17.8124V37.8124C17.776 38.426 17.2784 38.9237 16.6648 38.9237H12.2202C11.6066 38.9237 11.1094 38.426 11.1094 37.8124V17.8124C11.1094 17.1988 11.6066 16.7012 12.2202 16.7012Z"></path>
+                      <path d="M23.33 21.146H27.7746C28.3882 21.146 28.8854 21.6436 28.8854 22.2572V37.8127C28.8854 38.4263 28.3882 38.9239 27.7746 38.9239H23.33C22.7164 38.9239 22.2188 38.4263 22.2188 37.8127V22.2572C22.2188 21.6436 22.7164 21.146 23.33 21.146Z"></path>
+                      <path d="M34.4472 14.479H38.8914C39.505 14.479 40.0026 14.9766 40.0026 15.5903V37.8123C40.0026 38.4259 39.505 38.9236 38.8914 38.9236H34.4472C33.8336 38.9236 33.3359 38.4259 33.3359 37.8123V15.5903C33.3359 14.9766 33.8336 14.479 34.4472 14.479Z"></path>
+                      <path d="M36.6667 1.146C34.8267 1.14803 33.3354 2.63932 33.3333 4.47933C33.3378 4.84228 33.4021 5.20199 33.5238 5.54378L27.9614 8.85026C27.2314 8.07593 26.1731 7.70076 25.1184 7.84196C24.0633 7.98315 23.1413 8.62362 22.6404 9.56274L17.7344 7.13273C17.7584 6.98991 17.7726 6.84587 17.7779 6.70142C17.7804 5.35213 16.9694 4.13468 15.7235 3.6167C14.4775 3.09912 13.0424 3.38354 12.0882 4.33732C11.1336 5.2911 10.8484 6.72583 11.3656 7.97217L5.00163 12.7215C4.49707 12.4208 3.9209 12.2605 3.33333 12.2572C1.49251 12.2572 0 13.7493 0 15.5906C0 17.4314 1.49251 18.9239 3.33333 18.9239C5.17415 18.9239 6.66667 17.4314 6.66667 15.5906C6.66382 15.1894 6.58813 14.7926 6.44328 14.4187L12.8707 9.62174C14.128 10.3228 15.6962 10.1173 16.7301 9.11556L22.3092 11.8788C22.6811 13.5353 24.2399 14.647 25.9273 14.459C27.6147 14.271 28.8908 12.844 28.8888 11.146C28.8888 11.0614 28.87 10.9816 28.8639 10.8986L34.9137 7.302C35.4382 7.63363 36.0457 7.81063 36.6667 7.81266C38.5075 7.81266 40 6.32015 40 4.47933C40 2.63851 38.5075 1.146 36.6667 1.146Z"></path>
+                    </svg>
+                    <h4 class="card-text fs-xl">Build collective narrative power systems against authoritarianism</h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-info rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.888997 20.4722H4.44434C4.93522 20.4722 5.33333 20.87 5.33333 21.3608V30.2498C5.33333 30.7407 4.93522 31.1388 4.44434 31.1388H0.888997C0.398112 31.1388 0 30.7407 0 30.2498V21.3608C0 20.87 0.398112 20.4722 0.888997 20.4722Z"></path>
+                      <path d="M9.7793 13.3608H13.335C13.8258 13.3608 14.224 13.759 14.224 14.2498V30.2498C14.224 30.7407 13.8258 31.1388 13.335 31.1388H9.7793C9.28841 31.1388 8.89062 30.7407 8.89062 30.2498V14.2498C8.89062 13.759 9.28841 13.3608 9.7793 13.3608Z"></path>
+                      <path d="M18.6702 16.9165H22.2259C22.7168 16.9165 23.1146 17.3146 23.1146 17.8055V30.2498C23.1146 30.7407 22.7168 31.1388 22.2259 31.1388H18.6702C18.1794 31.1388 17.7812 30.7407 17.7812 30.2498V17.8055C17.7812 17.3146 18.1794 16.9165 18.6702 16.9165V16.9165Z"></path>
+                      <path d="M27.5531 11.5835H31.1084C31.5993 11.5835 31.9974 11.9816 31.9974 12.4725V30.2502C31.9974 30.7411 31.5993 31.1392 31.1084 31.1392H27.5531C27.0622 31.1392 26.6641 30.7411 26.6641 30.2502V12.4725C26.6641 11.9816 27.0622 11.5835 27.5531 11.5835V11.5835Z"></path>
+                      <path d="M29.3333 0.916504C27.8613 0.918132 26.6683 2.11117 26.6667 3.58317C26.6702 3.87353 26.7217 4.1613 26.819 4.43473L22.3691 7.07991C21.7852 6.46045 20.9385 6.16032 20.0947 6.27327C19.2507 6.38623 18.513 6.8986 18.1123 7.6499L14.1875 5.70589C14.2067 5.59163 14.2181 5.4764 14.2223 5.36084C14.2243 4.28141 13.5755 3.30745 12.5788 2.89307C11.582 2.479 10.4339 2.70654 9.67057 3.46956C8.9069 4.23258 8.67871 5.38037 9.09245 6.37744L4.0013 10.1769C3.59766 9.93636 3.13672 9.8081 2.66667 9.8055C1.19401 9.8055 0 10.9992 0 12.4722C0 13.9448 1.19401 15.1388 2.66667 15.1388C4.13932 15.1388 5.33333 13.9448 5.33333 12.4722C5.33105 12.1512 5.27051 11.8338 5.15462 11.5347L10.2965 7.6971C11.3024 8.25797 12.557 8.09359 13.3841 7.29215L17.8473 9.50277C18.1449 10.828 19.3919 11.7173 20.7419 11.5669C22.0918 11.4165 23.1126 10.2749 23.111 8.9165C23.111 8.84879 23.096 8.78499 23.0911 8.71859L27.931 5.84131C28.3506 6.10661 28.8366 6.24821 29.3333 6.24984C30.806 6.24984 32 5.05583 32 3.58317C32 2.11051 30.806 0.916504 29.3333 0.916504V0.916504Z"></path>
+                    </svg>
+                    <h5 class="card-text text-white opacity-70">We aim to position communications as infrastructure, creating systems that counter disinformation, resist disinformation campaigns, and strengthen democratic discourse through movement-rooted storytelling.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="row justify-content-center g-4 mt-1">
+          <!-- Item -->
+          <div class="col-6 col-md-4">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-primary mb-4 mx-auto"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                                        <path d="M22.75 4.375H5.25C4.78587 4.375 4.34075 4.55937 4.01256 4.88756C3.68437 5.21575 3.5 5.66087 3.5 6.125V12.5541C3.5 22.3552 11.7928 25.6069 13.4531 26.1592C13.8077 26.2798 14.1923 26.2798 14.5469 26.1592C16.2094 25.6069 24.5 22.3552 24.5 12.5541V6.125C24.5 5.66087 24.3156 5.21575 23.9874 4.88756C23.6592 4.55937 23.2141 4.375 22.75 4.375ZM22.75 12.5552C22.75 21.1323 15.493 23.998 14 24.4967C12.5202 24.0034 5.25 21.14 5.25 12.5552V6.125H22.75V12.5552ZM9.00594 15.4941C8.84175 15.3299 8.74951 15.1072 8.74951 14.875C8.74951 14.6428 8.84175 14.4201 9.00594 14.2559C9.17012 14.0918 9.39281 13.9995 9.625 13.9995C9.85719 13.9995 10.0799 14.0918 10.2441 14.2559L12.25 16.2619L17.7559 10.7559C17.8372 10.6746 17.9337 10.6102 18.04 10.5662C18.1462 10.5222 18.26 10.4995 18.375 10.4995C18.49 10.4995 18.6038 10.5222 18.71 10.5662C18.8163 10.6102 18.9128 10.6746 18.9941 10.7559C19.0754 10.8372 19.1398 10.9337 19.1838 11.04C19.2278 11.1462 19.2505 11.26 19.2505 11.375C19.2505 11.49 19.2278 11.6038 19.1838 11.71C19.1398 11.8163 19.0754 11.9128 18.9941 11.9941L12.8691 18.1191C12.7878 18.2004 12.6913 18.265 12.5851 18.309C12.4788 18.353 12.365 18.3757 12.25 18.3757C12.135 18.3757 12.0212 18.353 11.9149 18.309C11.8087 18.265 11.7122 18.2004 11.6309 18.1191L9.00594 15.4941Z"/>
+
+                    </svg>
+                    <h4 class="card-text fs-xl">
+                      Redistribute resources and care to historically marginalized movements
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-primary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M30.244 12.5253L27.7373 12.2067C27.5307 11.5707 27.276 10.9573 26.9787 10.3747L28.5267 8.38133C29.1533 7.57467 29.08 6.436 28.364 5.74267L26.264 3.64267C25.564 2.92 24.4253 2.848 23.6173 3.47333L21.6267 5.02133C21.044 4.724 20.4307 4.46933 19.7933 4.26267L19.4747 1.76C19.3547 0.756 18.5027 0 17.4933 0H14.5067C13.4973 0 12.6453 0.756 12.5253 1.756L12.2067 4.26267C11.5693 4.46933 10.956 4.72267 10.3733 5.02133L8.38133 3.47333C7.576 2.848 6.43733 2.92 5.74267 3.636L3.64267 5.73467C2.92 6.436 2.84667 7.57467 3.47333 8.38267L5.02133 10.3747C4.72267 10.9573 4.46933 11.5707 4.26267 12.2067L1.76 12.5253C0.756 12.6453 0 13.4973 0 14.5067V17.4933C0 18.5027 0.756 19.3547 1.756 19.4747L4.26267 19.7933C4.46933 20.4293 4.724 21.0427 5.02133 21.6253L3.47333 23.6187C2.84667 24.4253 2.92 25.564 3.636 26.2573L5.736 28.3573C6.43733 29.0787 7.57467 29.1507 8.38267 28.5253L10.3747 26.9773C10.9573 27.276 11.5707 27.5307 12.2067 27.736L12.5253 30.2373C12.6453 31.244 13.4973 32 14.5067 32H17.4933C18.5027 32 19.3547 31.244 19.4747 30.244L19.7933 27.7373C20.4293 27.5307 21.0427 27.276 21.6253 26.9787L23.6187 28.5267C24.4253 29.1533 25.564 29.08 26.2573 28.364L28.3573 26.264C29.08 25.5627 29.1533 24.4253 28.5267 23.6173L26.9787 21.6253C27.2773 21.0427 27.532 20.4293 27.7373 19.7933L30.2387 19.4747C31.2427 19.3547 31.9987 18.5027 31.9987 17.4933V14.5067C32 13.4973 31.244 12.6453 30.244 12.5253ZM16 22.6667C12.324 22.6667 9.33333 19.676 9.33333 16C9.33333 12.324 12.324 9.33333 16 9.33333C19.676 9.33333 22.6667 12.324 22.6667 16C22.6667 19.676 19.676 22.6667 16 22.6667Z"
+                      ></path>
+                    </svg>
+                    <h5 class="fs-lg card-text text-white opacity-70">
+                      Through our FHR3 model, we redistribute not only funding, but also time,
+                      tools, skills, and emotional resources to those most excluded from traditional
+                      funding pipelines, and yet are the most critical movement builders, to ensure
+                      their leadership is sustained and amplified.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-6 col-md-4">
+            <div class="card card-flip">
+              <div class="card-flip-inner">
+                <div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-danger mb-4 mx-auto"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                  <path d="M26.7306 12.5C25.4119 6.375 22.5994 2.5 19.9981 2.5C17.3969 2.5 14.5844 6.375 13.2656 12.5H26.7306Z"></path>
+                  <path d="M12.5 20C12.4997 21.6722 12.6112 23.3426 12.8338 25H27.1663C27.3888 23.3426 27.5003 21.6722 27.5 20C27.5003 18.3278 27.3888 16.6574 27.1663 15H12.8338C12.6112 16.6574 12.4997 18.3278 12.5 20Z"></path>
+                  <path d="M13.2656 27.5C14.5844 33.625 17.3969 37.5 19.9981 37.5C22.5994 37.5 25.4119 33.625 26.7306 27.5H13.2656Z"></path>
+                  <path d="M29.2956 12.5H37.1706C35.9874 9.80721 34.1895 7.42918 31.9213 5.55667C29.6531 3.68416 26.9775 2.36928 24.1094 1.7175C26.4806 3.80375 28.3406 7.66125 29.2956 12.5Z"></path>
+                  <path d="M38.0638 15H29.6887C29.895 16.6587 29.9981 18.3286 29.9975 20C29.9977 21.6715 29.8941 23.3413 29.6875 25H38.0625C38.9741 21.729 38.9741 18.271 38.0625 15H38.0638Z"></path>
+                  <path d="M24.1094 38.2825C26.978 37.6311 29.654 36.3164 31.9227 34.4438C34.1914 32.5713 35.9896 30.1931 37.1731 27.5H29.2981C28.3406 32.3388 26.4806 36.1963 24.1094 38.2825Z"></path>
+                  <path d="M10.7109 27.5H2.83594C4.01943 30.1931 5.81766 32.5713 8.08636 34.4438C10.3551 36.3164 13.0311 37.6311 15.8997 38.2825C13.5259 36.1963 11.6659 32.3388 10.7109 27.5Z"></path>
+                  <path d="M15.8919 1.7175C13.0233 2.36893 10.3472 3.68365 8.07854 5.55618C5.80984 7.42871 4.01161 9.80692 2.82812 12.5H10.7031C11.6606 7.66125 13.5206 3.80375 15.8919 1.7175Z"></path>
+                  <path d="M9.99868 20C9.99852 18.3285 10.102 16.6587 10.3087 15H1.93369C1.0221 18.271 1.0221 21.729 1.93369 25H10.3087C10.102 23.3413 9.99852 21.6715 9.99868 20Z"></path>
+              
+                    </svg>
+                    <h4 class="card-text fs-xl">
+                      Ensure feminist and movement voices shape global communications and digital
+                      security agendas.
+                    </h4>
+                  </div>
+                </div>
+                <div class="card-flip-back bg-danger rounded-5 py-2 py-lg-4 px-0">
+                  <div class="card-body text-center">
+                    <svg
+                      class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                               <path d="M26.7306 12.5C25.4119 6.375 22.5994 2.5 19.9981 2.5C17.3969 2.5 14.5844 6.375 13.2656 12.5H26.7306Z"></path>
+                  <path d="M12.5 20C12.4997 21.6722 12.6112 23.3426 12.8338 25H27.1663C27.3888 23.3426 27.5003 21.6722 27.5 20C27.5003 18.3278 27.3888 16.6574 27.1663 15H12.8338C12.6112 16.6574 12.4997 18.3278 12.5 20Z"></path>
+                  <path d="M13.2656 27.5C14.5844 33.625 17.3969 37.5 19.9981 37.5C22.5994 37.5 25.4119 33.625 26.7306 27.5H13.2656Z"></path>
+                  <path d="M29.2956 12.5H37.1706C35.9874 9.80721 34.1895 7.42918 31.9213 5.55667C29.6531 3.68416 26.9775 2.36928 24.1094 1.7175C26.4806 3.80375 28.3406 7.66125 29.2956 12.5Z"></path>
+                  <path d="M38.0638 15H29.6887C29.895 16.6587 29.9981 18.3286 29.9975 20C29.9977 21.6715 29.8941 23.3413 29.6875 25H38.0625C38.9741 21.729 38.9741 18.271 38.0625 15H38.0638Z"></path>
+                  <path d="M24.1094 38.2825C26.978 37.6311 29.654 36.3164 31.9227 34.4438C34.1914 32.5713 35.9896 30.1931 37.1731 27.5H29.2981C28.3406 32.3388 26.4806 36.1963 24.1094 38.2825Z"></path>
+                  <path d="M10.7109 27.5H2.83594C4.01943 30.1931 5.81766 32.5713 8.08636 34.4438C10.3551 36.3164 13.0311 37.6311 15.8997 38.2825C13.5259 36.1963 11.6659 32.3388 10.7109 27.5Z"></path>
+                  <path d="M15.8919 1.7175C13.0233 2.36893 10.3472 3.68365 8.07854 5.55618C5.80984 7.42871 4.01161 9.80692 2.82812 12.5H10.7031C11.6606 7.66125 13.5206 3.80375 15.8919 1.7175Z"></path>
+                  <path d="M9.99868 20C9.99852 18.3285 10.102 16.6587 10.3087 15H1.93369C1.0221 18.271 1.0221 21.729 1.93369 25H10.3087C10.102 23.3413 9.99852 21.6715 9.99868 20Z"></path>
+                    </svg>
+                    <h5 class="fs-lg card-text text-white opacity-70">
+                      We aim to accompany organizations into global convenings on communications and
+                      digital technology, bridging the gap between feminist movement and tech
+                      infrastructure. By ensuring they can directly engage funders, donors, and
+                      policymakers we strengthen people power.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section>
+        <div class="bg-primary py-4" data-bs-theme="dark">
+          <div class="container fs-lg text-body text-center">
+            Join us in building the infrastructure of safety, storytelling, and solidarity.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary py-5">
+      <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="border-bottom text-center pb-4">
+          <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
+            <span class="text-primary flex-shrink-0 me-2">
+              <svg
+                version="1.1"
+                width="35"
+                height="32"
+                viewBox="0 0 36 33"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M108.53,240c8.84-4.38,19.06-4.85,28.45-7.12,4.06-.98,12.86-3.18,14.03-7.69,3.88-14.99-13.73-14.87-23.51-12.31-5.83,1.53-10.91,4.69-15.58,8.38-1.46,1.15-3.99,5.03-5.91,4.44-1-.31-9.92-14.47-10.84-16.72,13.95-16.4,38.56-21.73,59.03-16.62,34.3,8.57,18.95,51.71,22.49,77.21.85,6.09,5.86,5.51,10.75,4.25l.82.65c.8,1.28,2.24,16,1.74,17.53-1.24,3.75-15.56,3.82-18.96,3.48-6.11-.6-11.6-4.02-14.76-9.21-1.22-2.01-1.02-5.45-3.96-5.04-.35.05-2.65,4.71-3.74,6.02-1.71,2.06-4.74,4.78-7.12,5.99-13.67,6.93-36.68,4.08-44.77-10.27-8.59-15.25-4.18-35.04,11.83-42.98ZM141.47,248.25c-7.13,1.75-20.79,2.13-22.88,11.2-3.54,15.36,10.3,22.43,22.88,15.8,3.35-1.77,5.36-3.1,7.35-6.51.98-1.67,3.12-7.24,3.12-8.87v-15.38c-2.65.1-4.44,2.15-7.09,3.04-1.26.42-2.28.44-3.38.71Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M108.53,240c-16.01,7.94-20.42,27.73-11.83,42.98,8.08,14.35,31.09,17.2,44.77,10.27v66.75h-70.36v-120h37.43Z"
+                  style="fill: #faea77"
+                />
+                <path
+                  d="M141.47,65.25c17.35-.51,37.72,5.23,43.32,23.47-.34,1.37-16.97,13.34-18.28,13.3-1.79-.05-1.97-2.54-2.86-3.87-6.17-9.2-12.75-11.67-23.97-10.32-20.1,2.42-21.57,30.21-17.12,45.49,6.66,22.83,38.5,20.96,44.02-1.36,4.12-.63,15.75,8.76,20.55,9.81-3.92,13.04-14.31,24.63-27.69,28.12-28.09,7.32-57.85-5.75-64.03-35.61-1.95-9.42-2.33-25.32.4-34.53,5.67-19.12,24.31-34.21,44.48-33.8l1.18-.7Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25c.14,1.28-.24,2.09-1.09,3.02-1.21,1.32-12.54,9.42-14.35,10.37-1.25.66-2.53,1.21-3.93.77-1.68-4.65-5.57-9.02-9.82-11.16-12.73-6.43-28.04-1.17-32.77,12.54-5.27,15.27-2.95,44.48,17.42,46.72,6.92.76,9.74.02,15.35-3.01.4-.22,1.52.09,2.63-.71.98-.71,3.29-3.16,4.09-4.19,2.48-3.2,2.93-6.11,4.97-9.32l18.26,9.32c1.71,1.65-.63,6.18-1.6,8.17-1.11,2.29-5.87,9.42-7.39,10.97-12.78,13.02-37.87,13.57-53.88,7.11-40.97-16.52-38.49-89.13,6.72-100.5,20.08-5.05,45.93-.67,55.4,19.88Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M235.78,71.25h26.94s.75,3.75.75,3.75v63.75s10.48,0,10.48,0c-.17.35-1.36,5.06-1.44,5.68-.49,4.02.7,8.23,2.93,11.57h-11.98v23.25h-20.96v-23.25h-49.4v-16.88l42.66-67.88ZM242.51,96.75l-2.58,1.54-24.31,38.66,1.06,1.8h25.82v-42Z"
+                  style="fill: #ffffff"
+                />
+                <path
+                  d="M281.44,212.25h41.17v73.5h-49.4c1.52-1.55,6.28-8.67,7.39-10.97.97-1.99,3.31-6.52,1.6-8.17l-18.26-9.32c-2.04,3.21-2.49,6.12-4.97,9.32-.8,1.03-3.1,3.48-4.09,4.19-1.12.8-2.23.49-2.63.71v-56.25c4.24,2.14,8.14,6.51,9.82,11.16,1.4.44,2.68-.11,3.93-.77,1.81-.95,13.14-9.06,14.35-10.37.86-.93,1.23-1.74,1.09-3.02Z"
+                  style="fill: #b8e084"
+                />
+                <path
+                  d="M141.47,65.25l-1.18.7c-20.17-.41-38.81,14.68-44.48,33.8-11.33-3.39-22.89-14.83-24.51-26.82-6.96-51.48,66.57-57.76,70.17-7.68Z"
+                  style="fill: #de3821"
+                />
+                <path
+                  d="M275.45,156c-2.24-3.34-3.43-7.54-2.93-11.57.08-.63,1.27-5.33,1.44-5.68.87-1.8,5.24-5.07,7.19-5.92,14.01-6.05,27.22,7.9,19.89,21.43-5.08,9.37-19.49,10.83-25.58,1.74Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M263.47,75l-.75-3.75h-26.94c-5.64-30.5,40.45-25.07,27.69,3.75Z"
+                  style="fill: #638cca"
+                />
+                <path
+                  d="M141.47,248.25v27c-12.58,6.63-26.42-.44-22.88-15.8,2.09-9.07,15.75-9.45,22.88-11.2Z"
+                  style="fill: #f8e877"
+                />
+              </svg>
+            </span>
+            <span>C4AC</span>
+          </a>
+          <ul class="nav justify-content-center py-1 pb-sm-2">
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="join-team.html">Join Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="media-kit.html">Media Kit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="policies.html">Policies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-2 px-3 mx-1" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+          <div class="d-flex justify-content-center gap-3 order-sm-2 mb-4 mb-sm-0">
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle"
+              href="#"
+              aria-label="Instagram"
+            >
+              <i class="ai-instagram"></i>
+            </a>
+            <a
+              class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle"
+              href="#"
+              aria-label="LinkedIn"
+            >
+              <i class="ai-linkedin"></i>
+            </a>
+          </div>
+          <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+            <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
+            <a class="nav-link fw-normal p-0 ms-1" href="#" target="_blank" rel="noopener"
+              >C4AC Labs</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle
+          cx="20"
+          cy="20"
+          r="19"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-miterlimit="10"
+        ></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

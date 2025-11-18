@@ -1,19 +1,23 @@
-## The documentation is available online here:
+# C4AC Website
 
-https://around.createx.studio/docs/getting-started.html
-OR
-**Offline**: inside Around/docs folder
+This repository contains the public codebase for the **Comms for a Cause (C4AC)** website — a fully custom static site built with HTML, CSS, JavaScript, and Bootstrap.
 
-## To download Figma files which include all design mockups follow the link below:
+The website serves as C4AC’s primary digital presence and provides information about our work, values, and programs. All code is maintained directly within this repository and deployed as a static site.
 
-https://drive.google.com/drive/folders/187kFSLX6BG7Q0WybwjQtd2QKt49wSBkb?usp=sharing
+---
 
-## Theme Installation Steps:
+## Tech Stack
 
-1. Install Node.js and Npm (Node Package Manager)
-   https://nodejs.org/en/
-2. Run `npm install` in your terminal to install all project dependencies.
-3. After the installation is completed, run `npm run dev` to launch the project in dev mode. It should automatically open the Around homepage in your browser at http://localhost:3000/
-4. To access additional information about other available npm commands (scripts), please refer to the relevant documentation article.
+- HTML
+- CSS
+- JavaScript
+- Bootstrap 5
 
-**For more details see the documentation that comes with the theme.**
+The site does not use a CMS, backend, or server-side framework.
+
+---
+
+## License
+
+**All rights reserved.**  
+No part of this repository may be reused, copied, or redistributed without permission.
